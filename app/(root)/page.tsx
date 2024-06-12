@@ -31,6 +31,10 @@ export default function Home() {
                 <ul className="space-y-2">
                   <li className="flex items-center gap-1.5 text-left">
                     <Check className="h-5 w-5 shrink-0 text-blue-600" />
+                    Don&apos;t settle for alternative drugs
+                  </li>
+                  <li className="flex items-center gap-1.5 text-left">
+                    <Check className="h-5 w-5 shrink-0 text-blue-600" />
                     Find prescriptions easily.
                   </li>
                   <li className="flex items-center gap-1.5 text-left">
