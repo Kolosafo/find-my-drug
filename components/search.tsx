@@ -1,11 +1,9 @@
 "use client";
-
 import { SearchIcon, X } from "lucide-react";
 import { useState } from "react";
 
 function Search() {
   const [searchQuery, setSearchQuery] = useState<string>("");
-
   return (
     <label
       htmlFor="search"
@@ -24,13 +22,15 @@ function Search() {
         }}
         className="h-fit w-full border-none bg-transparent px-4 outline-none transition duration-300 placeholder:text-sm placeholder:tracking-widest"
       />
-      <button
-        type="button"
-        title="clear input"
-        onClick={() => setSearchQuery("")}
-      >
-        <X className="h-5 w-5" />
-      </button>
+      {searchQuery && (
+        <button
+          type="button"
+          title="clear input"
+          onClick={() => setSearchQuery("")}
+        >
+          <X className="h-5 w-5" />
+        </button>
+      )}
     </label>
   );
 }
