@@ -46,7 +46,7 @@ export default function Home() {
               </div>
 
               <div>
-                <h2 className="mb-4 text-blue-600">For businesses</h2>
+                <h2 className="mb-4 text-blue-600">For pharmacies</h2>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-1.5 text-left">
                     <Check className="h-5 w-5 shrink-0 text-blue-600" />
