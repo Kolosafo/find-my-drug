@@ -19,20 +19,17 @@ export default function Home() {
               </h1>
             </div>
             <p className="lg:text-lef mx-auto mt-8 max-w-prose text-balance text-center text-lg md:text-wrap lg:pr-10">
-              Seach for your prescriptions or easily reach,{" "}
-              <span className="font-semibold">insert something important</span>{" "}
-              for pharmacies. we empower or enable you to sell out quickly I
-              guess. use our product please.
+              <span className="font-semibold">
+                Don&apos;t settle for alternative drugs,
+              </span>{" "}
+              Seach for your prescriptions easily from over 2,000 pharmacies
+              across Nigeria.
             </p>
 
             <div className="mt-8 flex w-full flex-col items-center justify-center gap-8 text-left font-medium lg:flex-row lg:gap-14 xl:gap-28">
               <div>
                 <h2 className="mb-4 text-blue-600">For individuals</h2>
                 <ul className="space-y-2">
-                  <li className="flex items-center gap-1.5 text-left">
-                    <Check className="h-5 w-5 shrink-0 text-blue-600" />
-                    Don&apos;t settle for alternative drugs
-                  </li>
                   <li className="flex items-center gap-1.5 text-left">
                     <Check className="h-5 w-5 shrink-0 text-blue-600" />
                     Find prescriptions easily.
@@ -57,7 +54,7 @@ export default function Home() {
                   </li>
                   <li className="flex items-center gap-1.5 text-left">
                     <Check className="h-5 w-5 shrink-0 text-blue-600" />
-                    Some other benefit.
+                    Sell out quickly
                   </li>
                   <li className="flex items-center gap-1.5 text-left">
                     <Check className="h-5 w-5 shrink-0 text-blue-600" />
