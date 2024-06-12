@@ -1,11 +1,30 @@
 "use client";
+import DrugCard from "@/components/drugCard";
 import Search from "@/components/search";
 import MaxWidthContainer from "@/components/shared/max-width-container";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import image1 from "@/public/1.jpg";
+import image2 from "@/public/2.jpg";
+import image3 from "@/public/images (3).jpg";
 
 function Page() {
+  const data = [
+    {
+      image: image1,
+      text: "Do not take a drug without a doctors prescription",
+    },
+    {
+      image: image2,
+      text: "Do not take a drug without a doctors prescription",
+    },
+    {
+      image: image3,
+      text: "Do not take a drug without a doctors prescription",
+    },
+  ];
+
   const [results, setResults] = useState(Array.from({ length: 10 }).fill(""));
 
   return (
@@ -19,7 +38,12 @@ function Page() {
           With contacts of over 2,000 major pharmacies across Nigeria, we can
           help you find any prescribed drug.
         </span>
-        <Search />
+        <div className="flex h-auto flex-col bg-transparent">
+          {data.map((item, index) => (
+            <DrugCard key={index} image={item.image} text={item.text} />
+          ))}
+        </div>
+        {/* <Search /> */}
       </div>
       <div className="flex flex-col gap-6 rounded-md">
         <div className="flex justify-center bg-slate-50 py-5 text-center">
