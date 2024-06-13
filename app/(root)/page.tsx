@@ -15,7 +15,7 @@ export default function Home() {
               <h1 className="relative w-fit text-balance text-4xl font-bold !leading-tight tracking-tight text-gray-900 md:text-5xl lg:text-6xl xl:text-7xl">
                 <span className="px-2 text-blue-600"> Hassle free</span> search
                 for your medical
-                <span className="px-2 text-blue-600"> prescriptions</span>{" "}
+                <span className="px-2 text-blue-600"> prescriptions</span>
               </h1>
             </div>
             <p className="lg:text-lef mx-auto mt-8 max-w-prose text-balance text-center text-lg md:text-wrap lg:pr-10">
