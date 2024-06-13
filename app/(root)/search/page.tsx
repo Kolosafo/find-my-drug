@@ -13,11 +13,15 @@ function Page() {
   const data = [
     {
       image: image1,
-      text: "Do not take a drug without a doctors prescription",
+      text: "Do not take a drug without a doctors prescription.",
     },
     {
       image: image2,
-      text: "Do not take a drug without a doctors prescription",
+      text: "Do not take a drug without a doctors prescription.",
+    },
+    {
+      image: image3,
+      text: "Do not take a drug without a doctors prescription.",
     },
   ];
 
