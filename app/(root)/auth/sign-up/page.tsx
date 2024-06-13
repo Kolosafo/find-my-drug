@@ -1,63 +1,251 @@
-import MaxWidthContainer from "@/components/shared/max-width-container";
-import { ArrowLeft, LogIn } from "lucide-react";
+"use client";
+import { auth, userCollectionRef } from "@/firebase";
+import { login } from "@/redux/auth/authSlice";
+import { createUserWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import Image from "next/image";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import SignupPNG from "../../../../public/loginIcon.png";
+import { addDoc } from "firebase/firestore";
 
-export default function SignIn() {
+export type SignUpFornType = {
+  userType: "pharmacy" | "individual";
+  name: string;
+  location: string;
+  phoneNumber: string | number;
+  email: string;
+  password: string;
+  confirmPassword: string;
+};
+const SignUp = () => {
+  const [errorMsg, setErrorMsg] = useState("");
+  const [phoneError, setPhoneError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [signUpData, setSignUpData] = useState<SignUpFornType>({
+    userType: "pharmacy",
+    name: "",
+    location: "",
+    phoneNumber: "" as string | number,
+    email: "",
+    password: "",
+    confirmPassword: "",
+  });
+  const dispatch = useDispatch();
+  const router = useRouter();
+  const handleErrorMsg = (msg: string) => {
+    setErrorMsg(msg);
+  };
+
+  const handleSubmit = async () => {
+    setErrorMsg("");
+    setIsLoading(true);
+    await createUserWithEmailAndPassword(
+      auth,
+      signUpData.email,
+      signUpData.password,
+    )
+      .then(async (res) => {
+        setIsLoading(true);
+        await addDoc(userCollectionRef, {
+          userType: signUpData.userType,
+          name: signUpData.name,
+          location: signUpData.location,
+          phoneNumber: signUpData.phoneNumber,
+          email: signUpData.email,
+        }).then(() => {
+          router.push("/auth/login");
+        });
+      })
+      .catch((e) => {
+        if (e.message === "Firebase: Error (auth/email-already-in-use).") {
+          setErrorMsg("User with this email already exists");
+          return;
+        }
+        setErrorMsg(
+          "Somthing went wrong creating your account, please try again",
+        );
+      });
+    setIsLoading(false);
+  };
   return (
-    <MaxWidthContainer className="relative grid min-h-screen w-full place-content-center bg-gray-100">
-      <Link
-        href="/search"
-        className="absolute left-6 top-6 flex w-fit items-center gap-2 rounded-lg border bg-white px-4 py-2 text-sm transition duration-300 hover:bg-gray-50 hover:text-blue-600 md:left-20 md:top-10"
-      >
-        <ArrowLeft className="h-4 w-4" />
-        Back
-      </Link>
-      <div className="flex min-w-[300px] flex-col gap-8 rounded-md bg-white p-6 shadow-md lg:min-w-[360px] lg:px-8 lg:py-10">
-        <div className="flex flex-col items-center gap-4 leading-3">
-          <div>
-            <LogIn className="text-blue-600" />
+    <div className="flex min-h-screen items-center justify-center bg-white">
+      <div className="flex w-[70%] items-center justify-center">
+        <div className="flex flex-col max-lg:hidden">
+          <h1 className="mb-6 text-center text-4xl font-semibold text-blue-400">
+            Signup
+          </h1>
+          <Image src={SignupPNG} alt="Login Png" width={900} />
+        </div>
+        <div className="mx-auto my-4 w-full max-w-lg rounded bg-blue-100 px-8 pb-8 pt-6 shadow-md">
+          <span className="text-xs text-red-500">{errorMsg}</span>
+          <div className="mb-4">
+            <label
+              className="mb-2 block text-sm font-bold text-gray-700"
+              htmlFor="email"
+            >
+              Are you an individual or a Pharmacy?
+            </label>
+            <select
+              name="accountType"
+              id="accountType"
+              className="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+              onChange={(e) =>
+                setSignUpData({
+                  ...signUpData,
+                  userType: e.target.value as "pharmacy" | "individual",
+                })
+              }
+            >
+              <option value="pharmacy">Pharmacy</option>
+              <option value="individual">Individual</option>
+            </select>
           </div>
-
-          <div className="flex flex-col items-center">
-            <h1 className="text-lg font-semibold">Welcome</h1>
-            <p className="text-sm">Please sign in to continue.</p>
+          <div className="mb-4">
+            <label
+              className="mb-2 block text-sm font-bold text-gray-700"
+              htmlFor="email"
+            >
+              Name
+            </label>
+            <input
+              className="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+              id="name"
+              type="text"
+              placeholder={
+                signUpData.userType === "pharmacy"
+                  ? "Name of Pharmacy"
+                  : "John Michael"
+              }
+              value={signUpData.name}
+              onChange={(e) =>
+                setSignUpData({ ...signUpData, name: e.target.value })
+              }
+            />
+          </div>
+          <div className="mb-4">
+            <label
+              className="mb-2 block text-sm font-bold text-gray-700"
+              htmlFor="email"
+            >
+              Email
+            </label>
+            <input
+              className="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+              id="email"
+              type="text"
+              placeholder="johnmichael@gmail.com"
+              value={signUpData.email}
+              onChange={(e) =>
+                setSignUpData({ ...signUpData, email: e.target.value })
+              }
+            />
+          </div>
+          <div className="mb-4">
+            <label
+              className="mb-2 block text-sm font-bold text-gray-700"
+              htmlFor="email"
+            >
+              Contact Number
+            </label>
+            <span className="text-xs text-red-600">{phoneError}</span>
+            <input
+              className="focus:shadow-outline no-spinners w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+              id="email"
+              type="number"
+              maxLength={11}
+              placeholder="0801234567"
+              value={signUpData.phoneNumber.toString()}
+              onChange={(e) => {
+                setSignUpData({
+                  ...signUpData,
+                  phoneNumber: e.target.value,
+                });
+              }}
+            />
+          </div>
+          <div className="mb-4">
+            <label
+              className="mb-2 block text-sm font-bold text-gray-700"
+              htmlFor="email"
+            >
+              Location
+            </label>
+            <input
+              className="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+              id="location"
+              type="text"
+              placeholder="Abuja"
+              value={signUpData.location}
+              onChange={(e) =>
+                setSignUpData({ ...signUpData, location: e.target.value })
+              }
+            />
+          </div>
+          <div className="mb-6">
+            <label
+              className="mb-2 block text-sm font-bold text-gray-700"
+              htmlFor="password"
+            >
+              Password
+            </label>
+            <input
+              className="focus:shadow-outline mb-3 w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+              id="password"
+              type="password"
+              placeholder="******"
+              value={signUpData.password}
+              onChange={(e) =>
+                setSignUpData({ ...signUpData, password: e.target.value })
+              }
+            />
+          </div>
+          <div className="mb-6">
+            <label
+              className="mb-2 block text-sm font-bold text-gray-700"
+              htmlFor="confirmPassword"
+            >
+              Confirm Password
+            </label>
+            <input
+              className="focus:shadow-outline mb-3 w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+              id="confirmPassword"
+              type="password"
+              placeholder="******"
+              value={signUpData.confirmPassword}
+              onChange={(e) =>
+                setSignUpData({
+                  ...signUpData,
+                  confirmPassword: e.target.value,
+                })
+              }
+            />
+          </div>
+          <div className="flex flex-col items-center justify-between">
+            <span className="mb-2 text-sm text-red-500">{errorMsg}</span>
+            <button
+              disabled={isLoading}
+              onClick={handleSubmit}
+              className={`rounded bg-emerald-500 px-4 py-2 font-bold text-white hover:bg-emerald-700 ${
+                isLoading ? "cursor-not-allowed opacity-50" : ""
+              }`}
+            >
+              {isLoading ? "Loading..." : "Create Account"}
+            </button>
+            <a href="/auth/login" className="mt-3 inline-block align-baseline">
+              Already have an account?{" "}
+              <span className="cursor-pointer text-sm font-bold text-blue-500 underline hover:text-blue-800">
+                Log in
+              </span>
+            </a>
+          </div>
+          <div className="mt-6 text-center">
+            <div className="w-full border-t border-gray-400 pb-4"></div>
           </div>
         </div>
-
-        <form>
-          <div className="flex flex-col gap-6">
-            <button
-              type="submit"
-              className="flex items-center justify-center gap-2 rounded-md border border-gray-200 p-4 outline-none transition duration-300 hover:bg-gray-100 focus-visible:border-dotted focus-visible:bg-gray-100"
-            >
-              <Image src={"/google.svg"} alt="google" width={20} height={20} />
-              <span className="text-sm">Sign in with Google</span>
-            </button>
-
-            <div className="flex items-center">
-              <div className="h-px w-full bg-gray-100" />
-              <span className="mx-4 text-sm">or</span>
-              <div className="h-px w-full bg-gray-100" />
-            </div>
-
-            <div className="relative">
-              <label htmlFor="email" className="mb-2">
-                Email Address
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                autoComplete="off"
-                placeholder="Enter your email address"
-                aria-describedby="email-error"
-                className="border-input peer w-full rounded-md border p-3 placeholder:text-transparent focus-visible:border-transparent focus-visible:outline-dashed focus-visible:outline-1 focus-visible:outline-blue-600"
-              />
-            </div>
-          </div>
-        </form>
       </div>
-    </MaxWidthContainer>
+    </div>
   );
-}
+};
+
+export default SignUp;
