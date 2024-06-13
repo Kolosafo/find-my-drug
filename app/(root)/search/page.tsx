@@ -19,10 +19,6 @@ function Page() {
       image: image2,
       text: "Do not take a drug without a doctors prescription",
     },
-    {
-      image: image3,
-      text: "Do not take a drug without a doctors prescription",
-    },
   ];
 
   const [results, setResults] = useState(Array.from({ length: 10 }).fill(""));
