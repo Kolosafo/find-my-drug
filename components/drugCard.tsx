@@ -2,7 +2,13 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 
-const DrugCard = ({ image, text }: { image: string | StaticImageData; text: string }) => {
+const DrugCard = ({
+  image,
+  text,
+}: {
+  image: string | StaticImageData;
+  text: string;
+}) => {
   return (
     <div className="my-4 flex items-center justify-around rounded-xl bg-blue-700 p-4 hover:bg-blue-400">
       <div>

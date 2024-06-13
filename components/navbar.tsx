@@ -21,8 +21,10 @@ function Navbar() {
             <li className="relative">
               <Link
                 href="/auth/sign-up"
-                className={`rounded-md px-3 py-1.5 text-sm text-foreground outline-2 transition duration-300 hover:bg-gray-100 focus-visible:outline-dashed ${
-                  pathname === "/sign-up" ? "bg-gray-100 text-blue-500" : "bg-transparent"
+                className={`text-foreground rounded-md px-3 py-1.5 text-sm outline-2 transition duration-300 hover:bg-gray-100 focus-visible:outline-dashed ${
+                  pathname === "/sign-up"
+                    ? "bg-gray-100 text-blue-500"
+                    : "bg-transparent"
                 }`}
               >
                 Sign up
@@ -32,8 +34,10 @@ function Navbar() {
             <li className="relative">
               <Link
                 href="/search"
-                className={`rounded-md px-3 py-1.5 text-sm text-foreground outline-2 transition duration-300 hover:bg-gray-100 focus-visible:outline-dashed ${
-                  pathname === "/search" ? "bg-gray-100 text-blue-500" : "bg-transparent"
+                className={`text-foreground rounded-md px-3 py-1.5 text-sm outline-2 transition duration-300 hover:bg-gray-100 focus-visible:outline-dashed ${
+                  pathname === "/search"
+                    ? "bg-gray-100 text-blue-500"
+                    : "bg-transparent"
                 }`}
               >
                 Search ✨
