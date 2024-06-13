@@ -1,6 +1,6 @@
 "use client";
 import { auth, userCollectionRef } from "@/firebase";
-// import { login } from "@/redux/auth/authSlice";
+import { login } from "@/redux/auth/authSlice";
 import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -11,7 +11,7 @@ import Image from "next/image";
 import { getDocs } from "firebase/firestore";
 import { toast } from "react-toastify";
 import { UserType } from "@/types";
-// import { IRootState } from "@/redux/store";
+import { IRootState } from "@/redux/store";
 
 const Login = () => {
   const [errorMsg, setErrorMsg] = useState("");
@@ -54,19 +54,19 @@ const Login = () => {
         const findUser = allUsers.find(
           (search) => search.email === res.user.email,
         ) as UserType;
-        // dispatch(
-        //   login({
-        //     id: findUser.id,
-        //     userType: findUser.userType,
-        //     name: findUser.name,
-        //     location: findUser.location,
-        //     phoneNumber:
-        //       typeof findUser.phoneNumber === "string"
-        //         ? parseInt(findUser.phoneNumber)
-        //         : findUser.phoneNumber,
-        //     email: findUser.email,
-        //   }),
-        // );
+        dispatch(
+          login({
+            id: findUser.id,
+            userType: findUser.userType,
+            name: findUser.name,
+            location: findUser.location,
+            phoneNumber:
+              typeof findUser.phoneNumber === "string"
+                ? parseInt(findUser.phoneNumber)
+                : findUser.phoneNumber,
+            email: findUser.email,
+          }),
+        );
         router.push("/search");
       })
       .catch(() => {

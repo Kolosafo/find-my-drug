@@ -22,7 +22,12 @@ const userSlice = createSlice({
   name: "user",
   initialState: initailState,
   reducers: {
-    login: (state, action: PayloadAction<UserType>) => {},
+    login: (state, action: PayloadAction<UserType>) => {
+      console.log("LOGIN DISPATCH: ", action.payload);
+      state.user = action.payload;
+      state.isLogged = true;
+      state.authLoading = false;
+    },
     logout: (state) => {
       state.user = {
         email: "",
@@ -37,6 +42,7 @@ const userSlice = createSlice({
     },
 
     handleSignUp: (state, { payload }) => {
+      console.log("SIGN UP USER: ", payload);
       state.user = payload;
     },
   },
