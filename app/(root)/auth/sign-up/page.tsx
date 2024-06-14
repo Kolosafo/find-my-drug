@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import SignupPNG from "../../../../public/loginIcon.png";
+import { authValidator } from "@/utils/helpers";
 import { addDoc } from "firebase/firestore";
 
 export type SignUpFornType = {
@@ -38,6 +39,9 @@ const SignUp = () => {
   };
 
   const handleSubmit = async () => {
+    if (!authValidator(signUpData, handleErrorMsg)) {
+      return;
+    }
     setErrorMsg("");
     setIsLoading(true);
     await createUserWithEmailAndPassword(
