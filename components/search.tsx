@@ -12,6 +12,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
+import SearchInput from "./ui/search-input";
 
 function Search() {
   const { user, isLogged } = useSelector((state: IRootState) => state.user);
@@ -96,7 +97,11 @@ function Search() {
   return !isLogged ? (
     <div className="flex flex-col gap-8">
       <div className="flex flex-col gap-4">
-  
+        <SearchInput
+          searchQuery={searchQuery}
+          setSearchQuery={setSearchQuery}
+          placeholder="What drug(s) are you looking for?"
+        />
 
         {/* options dropdown */}
         <div className="relative w-fit text-gray-600">
