@@ -10,7 +10,7 @@ const DrugCard = ({
   text: string;
 }) => {
   return (
-    <div className="my-4 flex items-center justify-around rounded-xl bg-blue-700 p-4 hover:bg-blue-400">
+    <div className='flex items-center p-4 bg-blue-600 rounded-xl my-4 hover:bg-blue-400'>
       <div>
         <Image
           src={image}
