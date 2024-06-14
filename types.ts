@@ -19,6 +19,13 @@ export type UserType = {
   email?: string;
 };
 
+export type DrugSearchType = {
+  id?: string;
+  name: string;
+  searchLocations: LocationSearchType[];
+  user?: UserType;
+};
+
 export type DrugFoundType = {
   id?: string;
   drugSearchId?: string;

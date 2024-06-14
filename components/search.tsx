@@ -1,8 +1,22 @@
 "use client";
 import { SearchIcon, X } from "lucide-react";
+import { drugSearchCollectionRef } from "@/firebase";
+import { IRootState } from "@/redux/store";
+import { DrugSearchType, LocationSearchType } from "@/types";
+import { priceCalculator } from "@/utils/helpers";
+import { SearchLocations } from "@/utils/mockups";
+import { addDoc } from "firebase/firestore";
 import { useState } from "react";
+import { FaCheck } from "react-icons/fa";
+import { FaCircleCheck } from "react-icons/fa6";
+import { useSelector } from "react-redux";
+import { toast } from "react-toastify";
+import Link from "next/link";
 
 function Search() {
+  const { user, isLogged } = useSelector((state: IRootState) => state.user);
+  const [searchQuery, setSearchQuery] = useState<string>("");
+  const [searchLocation, setSearchLocaion] = useState<LocationSearchType[]>([]);
   const [searchQuery, setSearchQuery] = useState<string>("");
   return (
     <label
