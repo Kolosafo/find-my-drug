@@ -1,6 +1,31 @@
 import { SignUpFornType } from "@/app/(root)/auth/sign-up/page";
+import { LocationSearchType } from "@/types";
 import moment from "moment";
+import { SearchLocations } from "./mockups";
 
+export const priceCalculator = (location: LocationSearchType[]) => {
+  const removeEveryWhere = location.filter((l) => l !== "everywhere");
+  const removeEveryWhereBase = SearchLocations.filter(
+    (l) => l !== "everywhere",
+  );
+  if (removeEveryWhere.length === removeEveryWhereBase.length) {
+    //THE FES ONE SIMILATES WHEN A USER CLICKS ON ALL LOCATIONS (WHICH IS SELECTING EVERYWHERE) WITHOUT EXPLICITLY CLICKING ON EVERWHERE
+    //THE second ONE  EXPLICITLY CLICKS ON EVERWHERE WHICH GIVES ALL THE LOCATIONS
+    // WE THE FEE FOR SEARCHING PHARMACIES AROUND NIGERIA SHOULD IS SET TO 30k, we can review this later
+    return {
+      price: 5000,
+      searchAmount: removeEveryWhere.length * 120,
+      locationCount: removeEveryWhere.length,
+    };
+  }
+
+  // NOW IF THE SELECTED LOCATIONS ARE NOT ALL THE LOCATIONS WE WAN RETURN AN INCREMENTAL PRICE BASED ON HOW MANY LOCATIONS SELECTED
+  return {
+    price: 1000 * removeEveryWhere.length,
+    searchAmount: removeEveryWhere.length * 120,
+    locationCount: removeEveryWhere.length,
+  };
+};
 
 export const authValidator = (
   data: SignUpFornType,
