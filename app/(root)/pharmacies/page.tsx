@@ -83,8 +83,6 @@ const Page = () => {
               >
                 <div className="h-16 w-16 rounded-md bg-gray-200"></div>
                 <div>
-                  <h3 className="xl:text-lg font-semibold">Pharmacy Name</h3>
-                  <p className="flex items-center gap-2 text-gray-600 text-sm lg:text-base">
                   <h3 className="font-semibold xl:text-lg">Pharmacy Name</h3>
                   <p className="flex items-center gap-2 text-sm text-gray-600 lg:text-base">
                     <MapPin size={16} />
