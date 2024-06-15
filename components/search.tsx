@@ -48,22 +48,6 @@ function Search() {
       }
       return;
     }
-
-    // console.log("LOCATION: " + location);
-    // if (removeEveryWhere) {
-    //   setSearchLocation([]);
-    //   setPricing({
-    //     price: 0,
-    //     searchAmount: 0,
-    //     locationCount: 0,
-    //   });
-    //   return;
-    // }
-    // if (location === "everywhere") {
-    //   setSearchLocation(SearchLocations);
-    //   setPricing(priceCalculator(SearchLocations));
-    //   return;
-    // }
     const checkExists = searchLocation.find((item) => item === location);
     if (checkExists) {
       const removeLocation = searchLocation.filter((item) => item !== location);
