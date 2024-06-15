@@ -73,6 +73,29 @@ const Page = () => {
           </ul>
         </div>
       </section>
+      <section className="mt-10">
+        <div className="mx-auto max-w-screen-lg">
+          <ul>
+            {results.map((result, index) => (
+              <li
+                key={index}
+                className="flex items-center gap-4 border-b border-gray-100 py-4"
+              >
+                <div className="h-16 w-16 rounded-md bg-gray-200"></div>
+                <div>
+                  <h3 className="xl:text-lg font-semibold">Pharmacy Name</h3>
+                  <p className="flex items-center gap-2 text-gray-600 text-sm lg:text-base">
+                  <h3 className="font-semibold xl:text-lg">Pharmacy Name</h3>
+                  <p className="flex items-center gap-2 text-sm text-gray-600 lg:text-base">
+                    <MapPin size={16} />
+                    <span>Location</span>
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
     </MaxWidthContainer>
   );
 };
