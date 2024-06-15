@@ -13,13 +13,15 @@ const Page = () => {
   const searchId = searchParams.get("searchId");
   const [fetchLoading, setFetchLoading] = useState(false);
   const [searchObject, setSearchObject] = useState<DrugSearchType>();
-
+  const [submitLoading, setSubmitLoading] = useState(false);
   const handleSubmitDrugFound = async (finderInfo: DrugFoundType) => {
+    setSubmitLoading(true);
     await addDoc(drugFoundCollectionRef, {
       drugSearchId: searchId,
       finderName: finderInfo.finderName,
       finderLocation: finderInfo.finderLocation,
       finderPhoneNumber: finderInfo.finderPhoneNumber,
+      dateFound: finderInfo.dateFound,
     })
       .then((res) => {
         const drugSearcher = searchObject?.user?.phoneNumber;
@@ -30,6 +32,7 @@ const Page = () => {
           type: "error",
         });
       });
+    setSubmitLoading(false);
   };
   useEffect(() => {
     (async () => {
@@ -73,6 +76,7 @@ const Page = () => {
     </div>
   ) : (
     <DrugFoundForm
+      isLoading={submitLoading}
       drugName={searchObject?.name ?? ""}
       handleSumbitDrugFound={handleSubmitDrugFound}
     />
