@@ -52,7 +52,7 @@ function Page() {
             <span className="font-semibold text-red-500">3</span> simple steps
           </h2>
         </div>
-        <div className="flex h-auto flex-col bg-transparent">
+        <div className="sticky top-10 flex h-auto flex-col border bg-transparent">
           {data.map((item, index) => (
             <DrugCard key={index} image={item.image} text={item.text} />
           ))}
