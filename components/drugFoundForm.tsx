@@ -1,9 +1,11 @@
 "use client";
 import { DrugFoundType, DrugSearchType } from "@/types";
 import React, { useState } from "react";
+import moment from "moment";
 const DrugFoundForm = ({
   drugName,
   handleSumbitDrugFound,
+  isLoading,
 }: {
   drugName: string;
   handleSumbitDrugFound: ({
@@ -11,16 +13,19 @@ const DrugFoundForm = ({
     finderLocation,
     finderPhoneNumber,
   }: DrugFoundType) => void;
+  isLoading: boolean;
 }) => {
   const [errorMsg, setErrorMsg] = useState("");
   const [phoneError, setPhoneError] = useState("");
   const [drugFound, setDrugFound] = useState({
     finderName: "",
     finderLocation: "",
-    finderPhoneNumber: 0 as string | number,
+    finderPhoneNumber: "" as string | number,
+    dateFound: moment().format("YYYY-MM-DD"),
   });
   const handleSubmit = () => {
     setErrorMsg("");
+    setPhoneError("");
     if (
       drugFound.finderLocation === "" ||
       (drugFound.finderPhoneNumber === 0 && drugFound.finderName === "")
@@ -42,9 +47,14 @@ const DrugFoundForm = ({
   return (
     <div className="flex min-h-screen items-center justify-center bg-white">
       <div className="flex w-[70%] items-center justify-center">
-        <div className="mx-auto mb-4 w-full max-w-lg rounded bg-emerald-100 px-8 pb-8 pt-6 shadow-md">
-          <span className="mt-3 text-2xl font-semibold">{drugName}</span>
-          <div className="mb-4">
+        <div className="mx-auto mb-4 flex w-full max-w-lg flex-col rounded bg-blue-100 px-8 pb-8 pt-6 shadow-md">
+          <span className="mb-3 mt-3 self-center text-2xl font-semibold">
+            {drugName}
+          </span>
+          <span className="mb-2 mt-4 block text-sm font-semibold text-red-500">
+            Please only fill this form if you have the drug/prescription above
+          </span>
+          <div className="my-4">
             <label
               className="mb-2 block text-sm font-bold text-gray-700"
               htmlFor="email"
@@ -103,12 +113,13 @@ const DrugFoundForm = ({
             />
           </div>
           <div className="flex flex-col items-center justify-between">
-            <span className="text-red-600">{errorMsg}</span>
+            <span className="mb-2 text-sm text-red-600">{errorMsg}</span>
             <button
+              disabled={isLoading}
               onClick={handleSubmit}
-              className={`rounded bg-emerald-500 px-4 py-2 font-bold text-white hover:bg-emerald-700`}
+              className={`rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700`}
             >
-              Submit
+              {isLoading ? "Loading..." : "Submit"}
             </button>
           </div>
           <div className="mt-6 text-center">
