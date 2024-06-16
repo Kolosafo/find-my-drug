@@ -2,10 +2,14 @@
 import Link from "next/link";
 import MaxWidthContainer from "./shared/max-width-container";
 import { usePathname, useRouter } from "next/navigation";
-
+import { useSelector } from "react-redux";
+import { IRootState } from "@/redux/store";
 function Navbar() {
   const router = useRouter();
   const pathname = usePathname();
+
+  const { user, isLogged } = useSelector((state: IRootState) => state.user);
+  console.log("PATH NAME: ", pathname);
 
   return (
     <header className="sticky inset-x-0 top-0 z-[100] h-14 w-full border-b border-gray-200 bg-white/80 backdrop-blur-lg transition-all">
