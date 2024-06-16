@@ -43,7 +43,7 @@ function Page() {
             <DrugCard key={index} image={item.image} text={item.text} />
           ))}
         </div>
-        {/* <Search /> */}
+        <Search />
       </div>
       <section className="relative flex flex-col gap-6 rounded-md bg-red-500">
         <div className="sticky top-28">
