@@ -49,6 +49,20 @@ function Navbar() {
                 Search ✨
               </Link>
             </li>
+            {!isLogged && (
+              <li className="relative">
+                <Link
+                  href="/search/history"
+                  className={`rounded-md px-2 py-1 text-sm outline-2 hover:bg-gray-100 focus-visible:outline-dashed ${
+                    pathname === "/search/history"
+                      ? "bg-gray-200"
+                      : "bg-transparent"
+                  }`}
+                >
+                  History
+                </Link>
+              </li>
+            )}
             {/* <li className='relative'>
               <Link
                 href='/pharmacies'
