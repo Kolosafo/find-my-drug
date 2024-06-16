@@ -22,23 +22,25 @@ function Navbar() {
           <ul
             className={`flex min-w-full gap-6 text-lg font-medium transition duration-300`}
           >
-            <li className="relative">
-              <Link
-                href="/auth/sign-up"
-                className={`text-foreground rounded-md px-3 py-1.5 text-sm outline-2 transition duration-300 hover:bg-gray-100 focus-visible:outline-dashed ${
-                  pathname === "/sign-up"
-                    ? "bg-gray-100 text-blue-500"
-                    : "bg-transparent"
-                }`}
-              >
-                Sign up
-              </Link>
-            </li>
+            {!isLogged && (
+              <li className="relative">
+                <Link
+                  href="/auth/login"
+                  className={`rounded-md px-3 py-1.5 text-sm text-foreground outline-2 transition duration-300 hover:bg-gray-100 focus-visible:outline-dashed ${
+                    pathname === "/auth/login"
+                      ? "bg-gray-100 text-blue-500"
+                      : "bg-transparent"
+                  }`}
+                >
+                  Login
+                </Link>
+              </li>
+            )}
 
             <li className="relative">
               <Link
                 href="/search"
-                className={`text-foreground rounded-md px-3 py-1.5 text-sm outline-2 transition duration-300 hover:bg-gray-100 focus-visible:outline-dashed ${
+                className={`rounded-md px-3 py-1.5 text-sm text-foreground outline-2 transition duration-300 hover:bg-gray-100 focus-visible:outline-dashed ${
                   pathname === "/search"
                     ? "bg-gray-100 text-blue-500"
                     : "bg-transparent"
