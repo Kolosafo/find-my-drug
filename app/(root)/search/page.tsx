@@ -34,14 +34,10 @@ function Page() {
           With contacts of over 2,000 major pharmacies across Nigeria, we can
           help you find any prescribed medication.
         </span>
-        <span className="flex h-auto flex-col bg-transparent">
-          {data.map((item, index) => (
-            <DrugCard key={index} image={item.image} text={item.text} />
-          ))}
-        </span>
+
         <Search />
       </section>
-      <section className="relative flex flex-col gap-6 rounded-md bg-red-500">
+      <section className="relative flex flex-col gap-6 rounded-md">
         <div className="sticky top-28">
           <div className="flex justify-center bg-slate-50 py-5 text-center">
             <h2>
