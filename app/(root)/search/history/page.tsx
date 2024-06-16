@@ -1,4 +1,4 @@
-import HistoryCard from "@/components/historyCard";
+import HistoryCard from "@/components/HistoryCard";
 import { HistorMockup } from "@/utils/mockups";
 import React from "react";
 
