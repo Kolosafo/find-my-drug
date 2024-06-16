@@ -63,16 +63,6 @@ function Navbar() {
                 </Link>
               </li>
             )}
-            {/* <li className='relative'>
-              <Link
-                href='/pharmacies'
-                className={`outline-2 focus-visible:outline-dashed text-sm py-1 px-2 rounded-md hover:bg-gray-100 ${
-                  pathname === '/pharmacies' ? 'bg-gray-200' : 'bg-transparent'
-                }`}
-              >
-                Pharmacies
-              </Link>
-            </li> */}
           </ul>
         </nav>
       </MaxWidthContainer>
