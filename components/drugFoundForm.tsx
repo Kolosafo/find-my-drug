@@ -1,7 +1,7 @@
 "use client";
-import { DrugFoundType, DrugSearchType } from "@/types";
-import React, { useState } from "react";
+import { DrugFoundType } from "@/types";
 import moment from "moment";
+import React, { useState } from "react";
 const DrugFoundForm = ({
   drugName,
   handleSumbitDrugFound,
