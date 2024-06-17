@@ -20,7 +20,6 @@ const Login = () => {
     email: "",
     password: "",
   });
-  // const { user, isLogged } = useSelector((state: IRootState) => state.user);
   const dispatch = useDispatch();
   const router = useRouter();
 

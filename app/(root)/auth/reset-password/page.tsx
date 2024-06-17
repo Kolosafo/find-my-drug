@@ -1,15 +1,8 @@
 "use client";
 import { auth } from "@/firebase";
-import { login } from "@/redux/auth/authSlice";
-import {
-  sendPasswordResetEmail,
-  signInWithEmailAndPassword,
-  signInWithPopup,
-} from "firebase/auth";
+import { sendPasswordResetEmail } from "firebase/auth";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
 import loginPNG from "../../../../public/login.png";
 import Image from "next/image";
 
