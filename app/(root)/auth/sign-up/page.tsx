@@ -1,11 +1,9 @@
 "use client";
 import { auth, userCollectionRef } from "@/firebase";
-import { login } from "@/redux/auth/authSlice";
-import { createUserWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
 import SignupPNG from "../../../../public/loginIcon.png";
 import { authValidator } from "@/utils/helpers";
 import { addDoc } from "firebase/firestore";
@@ -32,7 +30,6 @@ const SignUp = () => {
     password: "",
     confirmPassword: "",
   });
-  const dispatch = useDispatch();
   const router = useRouter();
   const handleErrorMsg = (msg: string) => {
     setErrorMsg(msg);
