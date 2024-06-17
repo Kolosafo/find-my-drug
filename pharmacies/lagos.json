@@ -1,0 +1,602 @@
+[
+    {
+        "name": "Alpha Pharmacy & Stores Ltd",
+        "phoneNumber": "8134041020",
+        "address": "2B Alabi St, off Toyin St, Ikeja"
+    },
+    {
+        "name": "Mopheth Pharmacy Victoria Island Lagos",
+        "phoneNumber": "8086726291",
+        "address": "23A Adeola Odeku St, Victoria Island, Lagos 106104, Lagos"
+    },
+    {
+        "name": "Primeah Pharmacy",
+        "phoneNumber": "9085024887",
+        "address": "Awolowo Rd, Ikoyi, Lagos 106104, Lagos"
+    },
+    {
+        "name": "Medplus Pharmacy Lekki-Admiralty",
+        "phoneNumber": "8098509526",
+        "address": "Plot 2 Admiralty Wy, Lekki Phase 1, Lagos 106104, Lagos"
+    },
+    {
+        "name": "Healthrite Pharmacy & Supermart",
+        "phoneNumber": "9080378426",
+        "address": "72 Akerele Street Surulere, Lagos surulere akerele, Surulere, Lagos"
+    },
+    {
+        "name": "Medplus - Saka Tinubu",
+        "phoneNumber": "7013489458",
+        "address": "45 Saka Tinubu St, Victoria Island, Lagos 106104, Lagos"
+    },
+    {
+        "name": "Medplus Pharmacy",
+        "phoneNumber": "7013489459",
+        "address": "Tantalizers Building, 58 Adetokunbo Ademola Street, Victoria Island, Lagos 106104, Lagos"
+    },
+    {
+        "name": "Mopheth Pharmacy Lekki Lagos",
+        "phoneNumber": "8088526198",
+        "address": "32a Admiralty Wy, Lekki Phase 1, Lagos 105102, Lagos"
+    },
+    {
+        "name": "Santeforte Pharmacy",
+        "phoneNumber": "8176750121",
+        "address": "7 Bayo Adesina Rd, Olowora, Lagos 105102, Lagos"
+    },
+    {
+        "name": "Mopheth Pharmacy Festac Lagos",
+        "phoneNumber": "8081585229",
+        "address": "House 1, Road12, 1st Ave, Festac Town, Lagos 102312, Lagos"
+    },
+    {
+        "name": "Mopheth Pharmacy Lekki",
+        "phoneNumber": "8081585229",
+        "address": "12E Admiralty Wy, Lekki Phase I, Lekki 106104, Lagos"
+    },
+    {
+        "name": "Widdi Pharmacy",
+        "phoneNumber": "7087589354",
+        "address": "Marwa Mall 2, Adewunmi Adebimpe Dr, Lekki Phase I, Lagos"
+    },
+    {
+        "name": "Medplus Pharmacy - Landmark Mall",
+        "phoneNumber": "7087589354",
+        "address": "Oniru Estate, Landmark Retail Boulevard 3 and, 4 Water Corporation Dr, Victoria Island, Lagos"
+    },
+    {
+        "name": "Vatican Bells",
+        "phoneNumber": "8033019432",
+        "address": "61 Ogunlana Dr, Ikate, Lagos 101241, Lagos"
+    },
+    {
+        "name": "MEDPLUS 1004",
+        "phoneNumber": "8027272010",
+        "address": "1004 Housing Estate, Ozumba Mbadiwe Ave, Eti-Osa, Lagos"
+    },
+    {
+        "name": "HealthPlus Pharmacy, Allen Avenue (a mutti Pharmacy)",
+        "phoneNumber": "8095898328",
+        "address": "Centage Plaza, 14 Allen Ave, Allen, Ikeja 100271, Lagos"
+    },
+    {
+        "name": "Tehillah Pharmacy and Mega Store",
+        "phoneNumber": "8163592589",
+        "address": "96 Festac Access Rd, Amuwo Odofin, Lagos 102102, Lagos"
+    },
+    {
+        "name": "HealthPlus Pharmacy, Lekki 1 (a mutti Pharmacy)",
+        "phoneNumber": "8095896090",
+        "address": "11B Victoria Arobieke St, Lekki Phase I, Lagos 106104, Lagos"
+    },
+    {
+        "name": "Bernados Pharmacy",
+        "phoneNumber": "8095896090",
+        "address": "66 Ishaga Rd, Idi Oro, Lagos 102215, Lagos"
+    },
+    {
+        "name": "Alpha Pharmacy & Stores Victoria Island",
+        "phoneNumber": "9062440967",
+        "address": "31 Ologun Agbaje Street, off Adeola Odeku St, Victoria Island, Lagos 106104"
+    },
+    {
+        "name": "Totem Pharmacy",
+        "phoneNumber": "9098086836",
+        "address": "56b Adeola Odeku St, Victoria Island, 23401, Eti-Osa, Lagos 101124"
+    },
+    {
+        "name": "BANE Pharmacy",
+        "phoneNumber": "8098255983",
+        "address": "Omoyeni St, Ijegun, Lagos 102213, Lagos"
+    },
+    {
+        "name": "Vatican Pharmacy",
+        "phoneNumber": "8176459918",
+        "address": "5 Akerele St, Surulere, Lagos 101241, Lagos"
+    },
+    {
+        "name": "Durose Pharmacy",
+        "phoneNumber": "8176459918",
+        "address": "25 Irone Ave, Ijesha Tedo, Lagos 101241, Lagos"
+    },
+    {
+        "name": "Drugpro Pharmacy",
+        "phoneNumber": "8038569395",
+        "address": "Confidence mall, 3 Hakeem Dickson Link Rd, Lekki Phase 1, Lagos 105102, Lagos"
+    },
+    {
+        "name": "Lifeback Pharmacy and Store Limited",
+        "phoneNumber": "8039888848",
+        "address": "Old Yabaroad Adekunle, 36 Makoko Rd, Yaba, Lagos 101212"
+    },
+    {
+        "name": "Blueseal Pharmacy",
+        "phoneNumber": "9087233361",
+        "address": "Festac Access Rd, Amuwo Odofin Estate, Lagos 102102, Lagos"
+    },
+    {
+        "name": "Primus Pharmacy",
+        "phoneNumber": "8166177733",
+        "address": "and via Abule Market, 14 Awoniyi Elemo Street, Off Osolo Wy, Ajao Estate, Lagos 100261"
+    },
+    {
+        "name": "Bengerty Pharmacy",
+        "phoneNumber": "9069431839",
+        "address": "H9RF+5PR, Kudirat Abiola Way, Opebi, Lagos 101233, Lagos"
+    },
+    {
+        "name": "Purelife Pharmacy Admiralty way, Lekki Phase 1 (HQ)",
+        "phoneNumber": "8090564568",
+        "address": "blk15 Admiralty Wy, Lekki Phase I, Lagos 106104, Lagos"
+    },
+    {
+        "name": "Naza pharmacy and store",
+        "phoneNumber": "8115867669",
+        "address": "6 Adams St, Oworosoki, Lagos 105102, Lagos"
+    },
+    {
+        "name": "HealthPlus Pharmacy (a mutti Pharmacy)",
+        "phoneNumber": "9087434210",
+        "address": "68 Adeniyi Jones, Ogba, Ikeja 101233, Lagos"
+    },
+    {
+        "name": "Medplus - Opebi",
+        "phoneNumber": "9082042960",
+        "address": "61 Opebi Rd, Opebi, Ikeja 101233, Lagos"
+    },
+    {
+        "name": "Healthrite Pharmacy",
+        "phoneNumber": "9048697683",
+        "address": "Local Development Council, 4, Ogunnusi Rd, Ojodu 101233, Ikeja, Lagos Ojodu, Ojodu Berger 101233, Lagos"
+    },
+    {
+        "name": "Bernados Pharmacy",
+        "phoneNumber": "7043571578",
+        "address": "Funsho Williams Ave, Surulere, Lagos 101241, Lagos"
+    },
+    {
+        "name": "Okolo White Pharmacy",
+        "phoneNumber": "8033217034",
+        "address": "Commercial Ave, Sabo yaba, Lagos 101245, Lagos"
+    },
+    {
+        "name": "Medvacc Pharmacy",
+        "phoneNumber": "7046125337",
+        "address": "16 Karimu Kotun St, Victoria Island, Lagos 106104, Lagos"
+    },
+    {
+        "name": "Alpha Pharmacy",
+        "phoneNumber": "7046125337",
+        "address": "FC59+Q5F, Ikeja Way, Dolphine Estate, Lagos 106104, Lagos"
+    },
+    {
+        "name": "Juli Pharmacy",
+        "phoneNumber": "9090551092",
+        "address": "19 Kodesoh St, Ikeja, Lagos 101233, Lagos"
+    },
+    {
+        "name": "Chemart Pharmacy",
+        "phoneNumber": "8182059355",
+        "address": "24 Furo Ezimora St, Lekki Phase I, Lekki 106104, Lagos"
+    },
+    {
+        "name": "Reinomed Pharmacy",
+        "phoneNumber": "8035279544",
+        "address": "24 Bajulaye Rd, Igbobi, Lagos 102216, Lagos"
+    },
+    {
+        "name": "Careforte Pharmacy & Health Shop",
+        "phoneNumber": "7044743759",
+        "address": "299 Akin Olugbade St, Victoria Island, Lagos 106104, Lagos"
+    },
+    {
+        "name": "BRISCON PHARMACY",
+        "phoneNumber": "8135273535",
+        "address": "2 Admiralty Rd, off Admiralty Way, Lekki Phase 1, Lekki 105102, Lagos"
+    },
+    {
+        "name": "HealthPlus Pharmacy (a mutti Pharmacy)",
+        "phoneNumber": "8095898256",
+        "address": "11 Commercial Ave, Sabo yaba, Lagos 101245, Lagos"
+    },
+    {
+        "name": "Big Pharmacy",
+        "phoneNumber": "8095898256",
+        "address": "F55X+V6F, Alh. Okin Rd, Ojo, Lagos 102113, Lagos"
+    },
+    {
+        "name": "Victory Drugs Pharmacy (with Vaccine Clinic)",
+        "phoneNumber": "7017412207",
+        "address": "Plot 57A 11 Rd, Festac Town, Lagos 102102, Lagos"
+    },
+    {
+        "name": "Nard Pharmacy & Stores Ltd.",
+        "phoneNumber": "7047410440",
+        "address": "3 Ikotun - Idimu Road, Alimosho, Lagos 100275"
+    },
+    {
+        "name": "Tonark Pharmacy and Health Shop",
+        "phoneNumber": "7047410440",
+        "address": "Shop G18, City Mall, Onikan, Lagos, Lagos, Lagos"
+    },
+    {
+        "name": "PRIMEAH PHARMACY",
+        "phoneNumber": "7044604410",
+        "address": "5 Cardoso St, Ajegunle, Lagos 102103, Lagos"
+    },
+    {
+        "name": "Alpha Pharmacy & Stores Adeniyi Jones",
+        "phoneNumber": "9060006241",
+        "address": "33 Adeniyi Jones, Oba Akran, Ikeja 101233, Lagos"
+    },
+    {
+        "name": "Vatican Bells Pharmacy",
+        "phoneNumber": "9060006241",
+        "address": "142 Bode Thomas St, Alaka, Lagos 101241, Lagos"
+    },
+    {
+        "name": "The Drug Store",
+        "phoneNumber": "8172005332",
+        "address": "3rd Floor, 62 Awolowo Rd, Ikoyi, Lagos 101233, Lagos"
+    },
+    {
+        "name": "Atsi Pharmacy Nigeria Limited",
+        "phoneNumber": "8172005332",
+        "address": "52 James Robertson Rd, Surulere, Lagos 101241, Lagos"
+    },
+    {
+        "name": "Pharmacy",
+        "phoneNumber": "8172005332",
+        "address": "Ojo, Lagos 102101, Lagos"
+    },
+    {
+        "name": "Medcourt Pharmacy",
+        "phoneNumber": "8096441447",
+        "address": "76 Ogudu Rd, Ojota, Lagos 105102, Lagos"
+    },
+    {
+        "name": "Lanyard Pharmacy",
+        "phoneNumber": "8034951601",
+        "address": "86 Ago Palace Way, Oshodi-Isolo, Lagos 102214, Lagos"
+    },
+    {
+        "name": "Nett Pharmacy",
+        "phoneNumber": "8034951601",
+        "address": "33 Opebi Rd, Allen, Ikeja 101233, Lagos"
+    },
+    {
+        "name": "Welnex Pharmacy",
+        "phoneNumber": "8035493198",
+        "address": "by Jakande Gate, 9 Egbe Rd, Oke Afa Rd, opposite Chicken Republic, Ejigbo, Lagos 102214, Lagos"
+    },
+    {
+        "name": "Shekinah Pharmacy",
+        "phoneNumber": "7086005960",
+        "address": "Off Iju Road, Fagba, 5 Jonathan Coker St, Railway Junction, Lagos"
+    },
+    {
+        "name": "HealthPlus",
+        "phoneNumber": "7086005960",
+        "address": "Gbagada - Oworonshoki Expy, Pedro, Lagos 102216, Lagos"
+    },
+    {
+        "name": "Tonyson Pharmacy and Stores",
+        "phoneNumber": "8023039766",
+        "address": "47A Simpson St, Adekunle St, Yaba, Lagos 101212, Lagos"
+    },
+    {
+        "name": "HealthPlus Pharmacy, Surulere (a mutti Pharmacy)",
+        "phoneNumber": "8095897913",
+        "address": "Shop 84, Adeniran Ogunsanya Shopping Mall, Adeniran Ogunsanya St, Surulere, Lagos"
+    },
+    {
+        "name": "New Concept Pharmacy",
+        "phoneNumber": "8033228337",
+        "address": "Costain Rd, Ojo, Lagos 102113, Lagos"
+    },
+    {
+        "name": "Rx3.0 Pharmacy",
+        "phoneNumber": "9031267777",
+        "address": "2nd Floor, 146 Ligali Ayorinde St, Victoria Island, Lagos 106104, Lagos"
+    },
+    {
+        "name": "Medplus Pharmacy - Adeniyi Jones",
+        "phoneNumber": "7006337587",
+        "address": "107 Adeniyi Jones, Ogba, Ikeja 101233, Lagos"
+    },
+    {
+        "name": "Beneze Pharmacy",
+        "phoneNumber": "8034889088",
+        "address": "4, demurin street, off ikorodu road, ketu, Lagos 300001"
+    },
+    {
+        "name": "Boluke Pharmacy",
+        "phoneNumber": "8033223828",
+        "address": "134Obafemi, Awolowo Way, Ikeja"
+    },
+    {
+        "name": "Baykins Pharmacy",
+        "phoneNumber": "9099800050",
+        "address": "Palace Rd, Victoria Island, Lagos 106104, Lagos"
+    },
+    {
+        "name": "Giottos Pharmacy",
+        "phoneNumber": "9021530009",
+        "address": "JC5C+7W6, Badejo St, ERUNKAN, Lagos 105102, Lagos"
+    },
+    {
+        "name": "Medplus Pharmacy - Mega",
+        "phoneNumber": "7013489466",
+        "address": "Mega Plaza Mall, 12 Idowu Martins St, Victoria Island, Lagos"
+    },
+    {
+        "name": "Medix Pharmacy",
+        "phoneNumber": "8032011961",
+        "address": "3 Mende Ajose Maryland lagos 7 Adebambo street obanikoro lagos 58, ikosi road off CMD road ketu, Ajose St, Maryland, Lagos 100211"
+    },
+    {
+        "name": "Kasville Pharmacy",
+        "phoneNumber": "8104542510",
+        "address": "22 Montgomery Rd, Yaba, Lagos 100001, Lagos"
+    },
+    {
+        "name": "Discount Pharmacy",
+        "phoneNumber": "8033441181",
+        "address": "201 Agege Motor Rd, Mushin, Lagos 102215, Lagos"
+    },
+    {
+        "name": "Pharmarket Online Pharmacy",
+        "phoneNumber": "8156839882",
+        "address": "2 Oyetubo Street, Off Obafemi Awolowo Way, Ikeja, Lagos"
+    },
+    {
+        "name": "Bola Chemists Ltd.",
+        "phoneNumber": "8156839882",
+        "address": "51 Campbell St, Lagos Island, Lagos 102273, Lagos"
+    },
+    {
+        "name": "Pillbox Pharmacy",
+        "phoneNumber": "7061190149",
+        "address": "4 Olumo St, Iwaya, Lagos 101245, Lagos"
+    },
+    {
+        "name": "HealthPlus Pharmacy, Ikoyi (a mutti Pharmacy)",
+        "phoneNumber": "8095274960",
+        "address": "Nakenohs Boulevard, 40 Alexander Ave, Ikoyi, Lagos 106104"
+    },
+    {
+        "name": "HealthPlus Pharmacy (a mutti Pharmacy)",
+        "phoneNumber": "8090413136",
+        "address": "26 Adetokunbo Ademola Street, Victoria Island, Lagos 106104, Lagos"
+    },
+    {
+        "name": "Silver Brothers Pharmacy",
+        "phoneNumber": "8054790979",
+        "address": "116 Ijesha Rd, Itire, Lagos 102215, Lagos"
+    },
+    {
+        "name": "Turmeric Pharmacy",
+        "phoneNumber": "8091116327",
+        "address": "41 Ire-Akari Estate Rd, Oshodi-Isolo, Lagos 100026, Lagos"
+    },
+    {
+        "name": "Alatra Pharmacy Limited",
+        "phoneNumber": "8037215555",
+        "address": "7 Oriyomi St, Lagos, Ikeja 101233, Lagos"
+    },
+    {
+        "name": "Joekem Pharmacy",
+        "phoneNumber": "8037215555",
+        "address": "J764+434, Owoyele St, Ipaja, Lagos 102213, Lagos"
+    },
+    {
+        "name": "Medplus Pharmacy",
+        "phoneNumber": "9152592989",
+        "address": "Ground Floor, Alagomeji Train Station, Ebute Metta Jct, Yaba, Lagos 101245, Lagos"
+    },
+    {
+        "name": "Boluke Pharmacy",
+        "phoneNumber": "8033223828",
+        "address": "439Agege Motor Road, Papa Ashafa, Ikeja 102212, Lagos"
+    },
+    {
+        "name": "Elbeth Community Pharma Plus",
+        "phoneNumber": "8062450621",
+        "address": "Isashi, 28 Celestial Rd, Ojo, Lagos 102101, Lagos"
+    },
+    {
+        "name": "Express Pharmacy",
+        "phoneNumber": "9087563744",
+        "address": "172b Akerele road, Surulere Surulere Local Government, Lagos 101001"
+    },
+    {
+        "name": "Egbeda Pharmacy",
+        "phoneNumber": "8053252277",
+        "address": "14 Idimu Rd, Egbeda, Lagos 102213, Lagos"
+    },
+    {
+        "name": "Boluke Pharmacy & Store",
+        "phoneNumber": "8053252277",
+        "address": "16, Iju Road (Pen-Cinema), Agege LA, Agege, Lagos"
+    },
+    {
+        "name": "HealthPlus Pharmacy, Herbert Macaulay (a mutti Pharmacy)",
+        "phoneNumber": "9087323783",
+        "address": "346 Herbert Macaulay Wy, Yaba, Lagos 100001, Lagos"
+    },
+    {
+        "name": "St. David's Pharmacy",
+        "phoneNumber": "7032946611",
+        "address": "14 Isaac John St, Ikeja GRA, Lagos 101233, Lagos"
+    },
+    {
+        "name": "Wellrose Pharmacy",
+        "phoneNumber": "9090542927",
+        "address": "4a Ajidagan St, Pedro, Lagos 102216, Lagos"
+    },
+    {
+        "name": "Atidam Pharmacy",
+        "phoneNumber": "9090542927",
+        "address": "1 Olayiwola St, Abule Egba, Lagos 102213, Lagos"
+    },
+    {
+        "name": "SLON PHARMACY",
+        "phoneNumber": "8077680117",
+        "address": "14 Kudirat Adenekan Street, Oke-Afa, Isolo, Oke-Afa, Lagos 100000"
+    },
+    {
+        "name": "Bernados Pharmacy",
+        "phoneNumber": "8077680117",
+        "address": "no 24 Itire St, Mushin, Lagos 101241, Lagos"
+    },
+    {
+        "name": "Unilag Pharmacy",
+        "phoneNumber": "8077680117",
+        "address": "G99V+CRC, Dan Fodio St, Yaba, Lagos 101245, Lagos"
+    },
+    {
+        "name": "Medvec Pharmacy",
+        "phoneNumber": "8022245920",
+        "address": "243 Olushinar Street, Ogudu, Lagos 105102, Lagos"
+    },
+    {
+        "name": "Allways pharmacy",
+        "phoneNumber": "8023380505",
+        "address": "19 Ikosi Rd, Oregun, Lagos 100212, Lagos"
+    },
+    {
+        "name": "Medmark Pharmacy",
+        "phoneNumber": "8036336275",
+        "address": "7 Adekunle Osomo St, Gbagada, Lagos 100234, Lagos"
+    },
+    {
+        "name": "BONAMOUR PHARMACY",
+        "phoneNumber": "8095127000",
+        "address": "New London Estate, 127 Candos Road, Nosiru Baruwa Cl, Ipaja, Lagos 100278"
+    },
+    {
+        "name": "Drug Point Pharmacy",
+        "phoneNumber": "8174009128",
+        "address": "9 University Rd, Yaba, Lagos 100231, Lagos"
+    },
+    {
+        "name": "Bydow Pharmacy",
+        "phoneNumber": "8090960541",
+        "address": "PRINCE EBAENO SUPERMARKET, T. F. Kuboye Rd, STREET, Lagos 101251, Lagos"
+    },
+    {
+        "name": "Chyzob Pharmacy",
+        "phoneNumber": "8170001325",
+        "address": "83 Awolowo Rd, Ikoyi, Lagos 106104, Lagos"
+    },
+    {
+        "name": "Hess Pharmacy",
+        "phoneNumber": "8142375998",
+        "address": "132 Awolowo Rd, Ikoyi, Lagos 106104, Lagos"
+    },
+    {
+        "name": "Josfekmart Pharmacy",
+        "phoneNumber": "8067280155",
+        "address": "46 Ekoro Rd, Abule Egba, Lagos 102213, Lagos"
+    },
+    {
+        "name": "HealthPlus Pharmacy, Ikeja City Mall (a mutti Pharmacy)",
+        "phoneNumber": "8095897922",
+        "address": "Shop L29, Lagos Lagos NG, Obafemi Awolowo Way, Ikeja, Ojodu 101233"
+    },
+    {
+        "name": "BPS Pharmacy",
+        "phoneNumber": "9011159626",
+        "address": "2 Alexander Ave, Ikoyi, Lagos 101233, Lagos"
+    },
+    {
+        "name": "Serenity Pharmacy & Supermarket",
+        "phoneNumber": "7066227407",
+        "address": "32 Hakeem Balogun St, Agidingbi, Ikeja 101233, Lagos"
+    },
+    {
+        "name": "Springcare Pharmacy",
+        "phoneNumber": "9098844389",
+        "address": "2 Ajayi Aina St, Gbagada, Lagos 105102, Lagos"
+    },
+    {
+        "name": "Chilpharm Pharmacy & Stores",
+        "phoneNumber": "9091989664",
+        "address": "11 Lateef Jakande Rd, Agidingbi, Ikeja 101233, Lagos"
+    },
+    {
+        "name": "HealthPlus Pharmacy (a mutti Pharmacy)",
+        "phoneNumber": "8093959536",
+        "address": "Phase I, Lagos NG, Plot 121 T. F. Kuboye Rd, Lekki 106104"
+    },
+    {
+        "name": "Chemart Pharmacy",
+        "phoneNumber": "9094632241",
+        "address": "3-5 Adeyemo Alakija St, Victoria Island, Lagos 106104, Lagos"
+    },
+    {
+        "name": "Pius & Gina Pharmacy",
+        "phoneNumber": "9094632241",
+        "address": "28 Glover St, Ebute Metta, Lagos 101212, Lagos"
+    },
+    {
+        "name": "Widdi Pharmacy",
+        "phoneNumber": "8066047162",
+        "address": "54 adebayo doherty road Eti Osa, Lekki Phase 1, Lagos"
+    },
+    {
+        "name": "Dabirah Pharmacy",
+        "phoneNumber": "9053090024",
+        "address": "Igwe Ohazulike Rd, Ifako-Ijaiye, Lagos 101232, Lagos"
+    },
+    {
+        "name": "Lifemed Pharmacy",
+        "phoneNumber": "7017300219",
+        "address": "17 Lagos St, Adekunle, Lagos 101245, Lagos"
+    },
+    {
+        "name": "MEDPLUS PHARMACY - GLOVER ROAD, IKOYI, LAGOS",
+        "phoneNumber": "9150691592",
+        "address": "37 Glover Rd, Ikoyi, Lagos 100001, Lagos"
+    },
+    {
+        "name": "Medplus Pharmacy",
+        "phoneNumber": "7013489468",
+        "address": "38 Awolowo Rd, Ikoyi, Lagos 106104, Lagos"
+    },
+    {
+        "name": "HealthPlus Pharmacy, Palms (a mutti Pharmacy)",
+        "phoneNumber": "8095898291",
+        "address": "Shop 54,The Palms Shopping Centre, Lekki, Lagos"
+    },
+    {
+        "name": "Fasid Pharmaceuticals",
+        "phoneNumber": "8091104433",
+        "address": "Plot 16, Ogunnusi-Isheri Road, Omole Phase 1 Bus Stop, Ikeja, Isheri, Ikeja"
+    },
+    {
+        "name": "Bolar Pharmacy and Stores",
+        "phoneNumber": "8091104433",
+        "address": "72Adeniyi Jones Avenue, Ogba, Lagos 101233, Lagos"
+    }
+]

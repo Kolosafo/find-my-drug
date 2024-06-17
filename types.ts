@@ -43,3 +43,9 @@ export type HistoryObjectType = {
   responses: string;
   dateCreated: string;
 };
+
+export type PharmListType = {
+  name: string;
+  phoneNumber: string;
+  address: string;
+};

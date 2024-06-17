@@ -1,0 +1,602 @@
+[
+    {
+        "name": "Dialogue Pharmacy 24/7",
+        "phoneNumber": "7060970202",
+        "address": "60 Tafawa Balewa Road, Kabala Coastain, Nasarawa 800283, Kaduna"
+    },
+    {
+        "name": "Sauki pharmacy",
+        "phoneNumber": "7060970202",
+        "address": "No.16 Sarki Road, Kabala Doki, Kaduna 800283, Kaduna"
+    },
+    {
+        "name": "Dialogue Pharmacy, Barnawa",
+        "phoneNumber": "7060970202",
+        "address": "5 Aliyu Makama Road, adjacent Gidan Sama, Barnawa, Kaduna 800242, Kaduna"
+    },
+    {
+        "name": "NA'ANS Purity Pharmacy Ltd",
+        "phoneNumber": "8069807111",
+        "address": "DB 17, Kigo Road, Kigo New Extension, Kaduna Kigo New Extension, Kaduna"
+    },
+    {
+        "name": "Abdulqadir Pharmacy",
+        "phoneNumber": "8034646745",
+        "address": "F9WW+X8R, Ungawn Mu'azu, Namiya 800282, Kaduna"
+    },
+    {
+        "name": "Pharmacy & Stores Nig. Ltd.",
+        "phoneNumber": "7037736751",
+        "address": "PP 10 WARRI ROAD BY KANO ROAD, KADUNA Ori Apata, Kaduna"
+    },
+    {
+        "name": "Sherpharm Pharmacy",
+        "phoneNumber": "8065429422",
+        "address": "C1, Ibadan Street, Off Ahmadu Bello Way, Kaduna, Kaduna"
+    },
+    {
+        "name": "Magrib Pharmacy",
+        "phoneNumber": "8065429422",
+        "address": "GC86+6FF, Tudun Wada, 800282, Kaduna"
+    },
+    {
+        "name": "Likarbu Bin Rashid pharmacy",
+        "phoneNumber": "8069964684",
+        "address": "GFH6+H7R, Shehu Laminu Avenue, Ungwan Rimi, 802125, Kaduna"
+    },
+    {
+        "name": "Zagbayi Pharmacy",
+        "phoneNumber": "8069964684",
+        "address": "GG6 warri street, by Kano Road, Kakuri, Kaduna"
+    },
+    {
+        "name": "Ladanat Pharmacy Ltd",
+        "phoneNumber": "8065360052",
+        "address": "49 Kachia Road, Mekara, Kaduna Junction 800282, Kaduna"
+    },
+    {
+        "name": "Cacciano Medical Stores",
+        "phoneNumber": "7039075674",
+        "address": "R16, Jos Road, By Lagos Street, Jos Road, Kaduna, Kaduna"
+    },
+    {
+        "name": "AH DANDAURA PATENT MEDICINE STORE",
+        "phoneNumber": "8141609014",
+        "address": "NO 1 KADUNA TO JOS ROAD DANDAURA KAURU LGA KADUNA Kaduna NG, Dandaura, Kauru 800106"
+    },
+    {
+        "name": "Andy Pharmacy Ltd",
+        "phoneNumber": "7088883232",
+        "address": "GG11, Kano Road, Oriapata, Kaduna Ori-Apata, Tudun Wada"
+    },
+    {
+        "name": "NANA PARMACY LTD",
+        "phoneNumber": "7088883232",
+        "address": "21 Constitution Rd, Doka, Kaduna 800283, Kaduna"
+    },
+    {
+        "name": "Aslad pharmacy",
+        "phoneNumber": "7088883232",
+        "address": "L7, Ahmadu Bello Way, Kakuri, Kaduna"
+    },
+    {
+        "name": "Nadada pharmacy",
+        "phoneNumber": "8168891014",
+        "address": "Sultan Road, City Centre, Kaduna 820221, Kaduna"
+    },
+    {
+        "name": "Bangees Pharmacy",
+        "phoneNumber": "8064041382",
+        "address": "Katsina Rd, Kakuri, Kaduna 800103, Kaduna"
+    },
+    {
+        "name": "Vicnam Pharmacy Ltd",
+        "phoneNumber": "8064041382",
+        "address": "AV1, Kano Road, by Benin Street, Kaduna"
+    },
+    {
+        "name": "Deedat Pharmacy",
+        "phoneNumber": "8063734734",
+        "address": "Benin Street, Sabon Gari, Tudun Wada 800103, Kaduna"
+    },
+    {
+        "name": "Clemska Medical",
+        "phoneNumber": "8034525794",
+        "address": "7, Warri Street, Off Kano Road, Kaduna, Kaduna"
+    },
+    {
+        "name": "Asamad Pharmacy & Store",
+        "phoneNumber": "8036054948",
+        "address": "10 Chawai Rd, opp. YMCA, Tudun Wada, Badiko 800282, Kaduna"
+    },
+    {
+        "name": "GARUS PATENT MEDICINE STORE",
+        "phoneNumber": "8036054948",
+        "address": "CROSSING-KATUL ALONG KACHIA KADUNA ROAD, Kaduna Junction"
+    },
+    {
+        "name": "Zak Patent Medicine",
+        "phoneNumber": "8024239019",
+        "address": "B14 Rigachukwu Road, Tudun Wada, Kaduna, Kaduna"
+    },
+    {
+        "name": "Charis Pharmacy Ltd",
+        "phoneNumber": "8142425620",
+        "address": "No 23 Juji Road By Kachia Road, sabo, Kaduna Junction"
+    },
+    {
+        "name": "Faith Medicine Store",
+        "phoneNumber": "8067187386",
+        "address": "No. 30 Narayi Road, Narayi, Kaduna, Kaduna"
+    },
+    {
+        "name": "Pharmacy and Stores Limited",
+        "phoneNumber": "8037863420",
+        "address": "Plot 11 Sultan Road, Ungwan Rimi, Nasarawa 802125, Kaduna"
+    },
+    {
+        "name": "Kenax Medical Biz",
+        "phoneNumber": "8032455447",
+        "address": "AV 13, Kano Road, Kaduna, Kaduna"
+    },
+    {
+        "name": "Lauham Pharmacy",
+        "phoneNumber": "8036948417",
+        "address": "Lawal Umar Aruna, No GGA, 16 Benin Street, Kaduna"
+    },
+    {
+        "name": "Ishara Pharmacy And General Enterprises (Nig) Ltd",
+        "phoneNumber": "8036948417",
+        "address": "SHOPPING COMPLEX, NO 24 Muhammadu Buhari Way, City Centre, Nasarawa 800283, Kaduna"
+    },
+    {
+        "name": "Makolad Pharmacy Ltd",
+        "phoneNumber": "8068709503",
+        "address": "Mount Zion Plaza, Kachia Road, opp. Nnpc Mega Station, Sabo, Kaduna Junction"
+    },
+    {
+        "name": "Caramel pharmacy Ltd",
+        "phoneNumber": "9133300000",
+        "address": "Shop no 23, city plaza, Ahmadu Bello Way, opp. Katsina Road Roundabout, Kakuri, Kaduna 800212, Kaduna"
+    },
+    {
+        "name": "Gods Own Pharmacy And Medical Equipments",
+        "phoneNumber": "8086346954",
+        "address": "12 Yoruba Rd, Kakuri, Kaduna 800283, Kaduna"
+    },
+    {
+        "name": "Dialogue Pharmacy Ltd",
+        "phoneNumber": "8086346954",
+        "address": "GCWW+5QH, Isa Kaita Road, City Centre, Nasarawa 800283, Kaduna"
+    },
+    {
+        "name": "Gilercy Medical",
+        "phoneNumber": "8133105833",
+        "address": "PP7, Warri Street, Off Kano Road, Kaduna, Kaduna"
+    },
+    {
+        "name": "Ejis Medical",
+        "phoneNumber": "8034647590",
+        "address": "GG2, Warri Street, Off Kano Road, Kaduna, Kaduna"
+    },
+    {
+        "name": "GALAD PHARMACY",
+        "phoneNumber": "8034647590",
+        "address": "F9VX+VXH, At-tatbiq Rd, Tudun Wada, Kaduna 800282, Kaduna"
+    },
+    {
+        "name": "Waraka Patent Medicine Vendor",
+        "phoneNumber": "8023617284",
+        "address": "No. 1 Isho Road, Unguwar Rimi, Kaduna, Kaduna"
+    },
+    {
+        "name": "Ishara Pharmacy",
+        "phoneNumber": "8023617284",
+        "address": "18 Muhammadu Buhari Way, City Centre, Nasarawa 800283, Kaduna"
+    },
+    {
+        "name": "Chucks Medical",
+        "phoneNumber": "8054357303",
+        "address": "GG1, Warri Street, Off Kano Road, Kaduna, Kaduna"
+    },
+    {
+        "name": "Mekus Medical",
+        "phoneNumber": "8032986178",
+        "address": "GG16, Bennin Street, Off Kano Road, Kaduna, Kaduna"
+    },
+    {
+        "name": "REPUBLICAN PHARMACY LTD",
+        "phoneNumber": "8028534526",
+        "address": "NO 2B, KADUNA CLUB SHOPPING COMPLEX, Muhammadu Buhari Way, Doka, Nasarawa"
+    },
+    {
+        "name": "Dookes Pharmacy Ltd",
+        "phoneNumber": "8104080690",
+        "address": "114 Kachia Road, LGA, Kaduna 800282, Kaduna"
+    },
+    {
+        "name": "CY Medical Company",
+        "phoneNumber": "8035954060",
+        "address": "GG4, Warri Street, Off Ahmadu Bello Way, Kaduna North"
+    },
+    {
+        "name": "Gilead Medicine Store",
+        "phoneNumber": "8023632786",
+        "address": "No. 17 Road, Narayi, Narayi, Kaduna, Kaduna"
+    },
+    {
+        "name": "Nonsco Pharmacy",
+        "phoneNumber": "8069513347",
+        "address": "GC8G+JJC, Warri Street, Off Kano Road, Kaduna, Kaduna, Tudun Wada"
+    },
+    {
+        "name": "Gisa Drugs Concept",
+        "phoneNumber": "8069513347",
+        "address": "AX 10, Kano Road, Kaduna, Kaduna"
+    },
+    {
+        "name": "Akkah pharmacy",
+        "phoneNumber": "8069513347",
+        "address": "Abuja Road, Kakuri, Tudun Wada 820221, Kaduna"
+    },
+    {
+        "name": "Akkah pharmacy",
+        "phoneNumber": "8069513347",
+        "address": "Mashi Rd, Tudun Wada, 820221, Kaduna"
+    },
+    {
+        "name": "Honoding Medical",
+        "phoneNumber": "8035610895",
+        "address": "AV 13, Kano Road, Kaduna, Kaduna"
+    },
+    {
+        "name": "Venn pharmacy",
+        "phoneNumber": "8108056105",
+        "address": "Abuja Road, Kakuri, Tudun Wada 820221, Kaduna"
+    },
+    {
+        "name": "Danflor Pharmacy & Store Ltd",
+        "phoneNumber": "7032396493",
+        "address": "Valid Oil, Kachia Road, Sabo, Kaduna Junction 800282, Kaduna"
+    },
+    {
+        "name": "Kunza Medical",
+        "phoneNumber": "8036937627",
+        "address": "TG 122, Taiwo Road, Off Ahmadu Bello Way, Kaduna, Kaduna"
+    },
+    {
+        "name": "Aljeeda Pharmacy",
+        "phoneNumber": "8189695293",
+        "address": "PE4, Ibrahim Taiwo Road, Kaduna North"
+    },
+    {
+        "name": "Ishara Pharmacy",
+        "phoneNumber": "8189695293",
+        "address": "5 Zaria Rd, Kakuri, Tudun Wada 800283, Kaduna"
+    },
+    {
+        "name": "Fragrance Medical",
+        "phoneNumber": "8032870083",
+        "address": "PP 10, Warri Street, Off Kano Road, Kaduna, Kaduna"
+    },
+    {
+        "name": "Haruna pharmacy",
+        "phoneNumber": "8032870083",
+        "address": "Yola Rd, Tudun Wada, Kaduna 820221, Kaduna"
+    },
+    {
+        "name": "Dendo Pharmacy",
+        "phoneNumber": "8032870083",
+        "address": "18BIlorin Road, Kabala Coastain, Kaduna 800283, Kaduna"
+    },
+    {
+        "name": "Teacher Pharmacy",
+        "phoneNumber": "9067670661",
+        "address": "Tudun Wada, Kaduna 800211, Kaduna"
+    },
+    {
+        "name": "Mansur pharmacy for prescription",
+        "phoneNumber": "8163716062",
+        "address": "Soba Street, Tudun Wada, 800282, Kaduna"
+    },
+    {
+        "name": "Abubakar pharmacy",
+        "phoneNumber": "8067615675",
+        "address": "Zaria Rd, Kakuri, Kaduna 820221, Kaduna"
+    },
+    {
+        "name": "AJB PHARMACY LTD",
+        "phoneNumber": "8037868645",
+        "address": "34 Constitution Rd, Kakuri, Kaduna 800283, Kaduna"
+    },
+    {
+        "name": "Alau Pharmacy",
+        "phoneNumber": "7035411781",
+        "address": "25 Gwari Rd, LGA, Kaduna 800283, Kaduna"
+    },
+    {
+        "name": "Emmyson Medical Ltd",
+        "phoneNumber": "8058990208",
+        "address": "11, Benin Street, Off Jos Road, Benin Road, Kaduna, Kaduna"
+    },
+    {
+        "name": "Khaj Medicine and Cosmetics Store",
+        "phoneNumber": "8058990208",
+        "address": "GC6M+J67, Abeokuta St, Kakuri, Tudun Wada 800283, Kaduna"
+    },
+    {
+        "name": "Afaf Patient Medicine Store",
+        "phoneNumber": "8058990208",
+        "address": "FCWQ+W8V, Market Rd, Kabala Doki, Kaduna 800283, Kaduna"
+    },
+    {
+        "name": "GTMC MEDICINE SHOP",
+        "phoneNumber": "8058990208",
+        "address": "GC5P+W4G, Daura Rd, Kakuri, Kaduna 800283, Kaduna"
+    },
+    {
+        "name": "Neo-Care Pharmacy",
+        "phoneNumber": "8058990208",
+        "address": "GC9R+466, Independence Way, Kakuri, Kaduna 800283, Kaduna"
+    },
+    {
+        "name": "Akunne Medical",
+        "phoneNumber": "8030443193",
+        "address": "GG16, Bennin Street, Off Kano Road, Kaduna, Kaduna"
+    },
+    {
+        "name": "Ochebu Pharmacy Enterprise",
+        "phoneNumber": "7030804508",
+        "address": "No.125 Ahmadu Bello Way, main, Kaduna 800283, Kaduna"
+    },
+    {
+        "name": "Christo Surgical",
+        "phoneNumber": "8037907204",
+        "address": "G11, Warri Street, Off Kano Road, Kaduna, Kaduna"
+    },
+    {
+        "name": "Jamila chemists",
+        "phoneNumber": "8039243680",
+        "address": "GC7P+44F, Katsina Rd, Sabon Gari, Kaduna 800103, Kaduna"
+    },
+    {
+        "name": "CONOC PHARMACY COMPANY LIMITED",
+        "phoneNumber": "8087252288",
+        "address": "G11 Benin Street, Kakuri, Kaduna 800283, Kaduna"
+    },
+    {
+        "name": "Chuks Medicals",
+        "phoneNumber": "7036531517",
+        "address": "Ori Apata, GG1 Kaduna-Kano Rd, Kakuri, Kaduna 800283, Kaduna"
+    },
+    {
+        "name": "Daflor Pharmacy",
+        "phoneNumber": "7032396493",
+        "address": "51 Sabo, Aliyu Makama Road, Kaduna"
+    },
+    {
+        "name": "Beracah Pharmacy",
+        "phoneNumber": "7032396493",
+        "address": "10 Offa Road, Kakuri, Tudun Wada 800001, Kaduna"
+    },
+    {
+        "name": "Sanative Pharmacy",
+        "phoneNumber": "7032396493",
+        "address": "4 Constitution Rd, Kakuri, Kaduna 800283, Kaduna"
+    },
+    {
+        "name": "We phamarcy",
+        "phoneNumber": "8160735708",
+        "address": "Sabon Gari, Tudun Wada 820221, Kaduna"
+    },
+    {
+        "name": "Deemcare Pharmacy",
+        "phoneNumber": "8162974445",
+        "address": "10 Aliyu Makama Road, Barnawa, Kaduna 800282, Kaduna"
+    },
+    {
+        "name": "ENBOKAY PHARMACY",
+        "phoneNumber": "8162974445",
+        "address": "1 Constitution Rd, Doka, Kaduna 800283, Kaduna"
+    },
+    {
+        "name": "NEBIC PHARMACY LTD.",
+        "phoneNumber": "8162974445",
+        "address": "16 Constitution Rd, Doka, Kaduna 800283, Kaduna"
+    },
+    {
+        "name": "Marvelous Medical",
+        "phoneNumber": "8037989631",
+        "address": "AV 13, Kano Road, Kaduna, Kaduna"
+    },
+    {
+        "name": "OLLAN PHARMACY LTD",
+        "phoneNumber": "8037989631",
+        "address": "AY, 15A Rigachukwa Rd, Kakuri, Kaduna 800283, Kaduna"
+    },
+    {
+        "name": "IB Mutunchi Pharmacy",
+        "phoneNumber": "8035933707",
+        "address": "PP8 Warri Street, Kakuri, Kaduna 800103, Kaduna"
+    },
+    {
+        "name": "Deemcare Pharmacy",
+        "phoneNumber": "8162974445",
+        "address": "35 Aliyu Makama Road, Barnawa, Birnawa 800282, Kaduna"
+    },
+    {
+        "name": "H&PA phamarcy",
+        "phoneNumber": "8108056108",
+        "address": "Katsina Rd, Kakuri, Kaduna 820221, Kaduna"
+    },
+    {
+        "name": "Auna Chemist",
+        "phoneNumber": "8108056108",
+        "address": "GC68+5HW, Dabban Road, U/sanusi, Tudun Wada 800282, Kaduna"
+    },
+    {
+        "name": "Omar Pharmaceutical Int Nig Ltd",
+        "phoneNumber": "8088068775",
+        "address": "H20, Abeokuta Street, by Katsina Rd, Doka, Kaduna"
+    },
+    {
+        "name": "Yabaya Pharmaceuticals",
+        "phoneNumber": "8186077341",
+        "address": "1 New Road, Kabala Doki, Kaduna South 800283, Kaduna"
+    },
+    {
+        "name": "A-Jay Medicine Store",
+        "phoneNumber": "8186077341",
+        "address": "GC4G+FPH, Damask Rd, Kakuri, Kaduna 800283, Kaduna"
+    },
+    {
+        "name": "ISLAMIC CHEMIST",
+        "phoneNumber": "8186077341",
+        "address": "GC4G+52M, Bashama Rd, Kakuri, Kaduna 800283, Kaduna"
+    },
+    {
+        "name": "Areef medicine store",
+        "phoneNumber": "8067041935",
+        "address": "Old, Kano Road, opposite massalacin idi Yan Rake, Kaduna"
+    },
+    {
+        "name": "Kerah'S Intergrity Pharmaceutical And Diagnostic Center",
+        "phoneNumber": "8054725336",
+        "address": "Opp Nasara Baptist Church Along Kano Road Makarfi Makarfi, Tudun Wada, Kaduna"
+    },
+    {
+        "name": "Magvin Pharmaceutical Ltd And Store",
+        "phoneNumber": "8132303087",
+        "address": "Daca Plaza, Shop No 11, After Total, Kachia Road, opp. Valid Oil, Sabo, Kaduna Junction"
+    },
+    {
+        "name": "Oladunni Pharmacy Nigeria Limited",
+        "phoneNumber": "8035270399",
+        "address": "50Lagos, Kaduna Rd, Niger"
+    },
+    {
+        "name": "Jenicare Pharmacy",
+        "phoneNumber": "8034713511",
+        "address": "No. 9 Image Plaza, Shagari Lowcost, Oppo Water Board, Kaduna"
+    },
+    {
+        "name": "Kwadeco Pharmacy",
+        "phoneNumber": "8034713511",
+        "address": "1 Kuroko/Ebogogo Junction, Kaduna"
+    },
+    {
+        "name": "Nefe Pharmacy And Stores",
+        "phoneNumber": "8023614123",
+        "address": "A3 Market Rd, Kabala Doki, Kaduna 800283, Kaduna"
+    },
+    {
+        "name": "Junaidu phamarcy",
+        "phoneNumber": "8060768082",
+        "address": "Abuja Road, Kakuri, Tudun Wada 820221, Kaduna"
+    },
+    {
+        "name": "Salex Phamarcy",
+        "phoneNumber": "8099209199",
+        "address": "F20 Abeokuta Street, by Jos Road, Doka, Tudun Wada"
+    },
+    {
+        "name": "Oluyole Chemist Ltd",
+        "phoneNumber": "8099209199",
+        "address": "NW7/555, Eleyele Road, Kabala Doki, Kaduna 200284, Kaduna"
+    },
+    {
+        "name": "Gamzakey pharmacy",
+        "phoneNumber": "8153708413",
+        "address": "Inuwar, Wada, Tudun Wada 820221, Kaduna"
+    },
+    {
+        "name": "Oac Pharmaceuticals",
+        "phoneNumber": "8032835862",
+        "address": "U/ Boro, New Market, 75, Sabo, Kaduna"
+    },
+    {
+        "name": "Ola Surgical",
+        "phoneNumber": "8065502431",
+        "address": "AX 10, Kano Road, Kaduna, Kaduna"
+    },
+    {
+        "name": "De- Frank Medical Store",
+        "phoneNumber": "8137469364",
+        "address": "Beside Nasara Baptist Church Along Old Kano Road Makarfi Makarfi, Tudun Wada, Kaduna"
+    },
+    {
+        "name": "God'S Hand Medical And Healthcare Store",
+        "phoneNumber": "8073747759",
+        "address": "Mcjewel Plaza, No 95 Kachia Road, Sabo, Kaduna Junction 800282, Kaduna"
+    },
+    {
+        "name": "Osaze Pharmaceutical Store",
+        "phoneNumber": "8091078719",
+        "address": "W20, Danmusa Road, Kakuri, Tudun Wada 800283, Kaduna"
+    },
+    {
+        "name": "Focus Medical",
+        "phoneNumber": "8066291094",
+        "address": "BH2, New Gida Giwa Road, Tudun-Nupawa, Kaduna, Kaduna"
+    },
+    {
+        "name": "ROLEM MEDICINE AND COSMETIC STORES",
+        "phoneNumber": "8066291094",
+        "address": "SHOP NO. 9, CELESTIAL ROAD, Kabala Doki, Kaduna"
+    },
+    {
+        "name": "Na'uzo Family Pharmacy",
+        "phoneNumber": "8066291094",
+        "address": "No 1 Central Mosque Corner Shop Kuta Road, Kaduna"
+    },
+    {
+        "name": "Alheri Patent Medicine Store",
+        "phoneNumber": "8066291094",
+        "address": "GC4P+M2F, Damaturu Rd, Kakuri, Kaduna 800283, Kaduna"
+    },
+    {
+        "name": "Gimbiayat Medicine",
+        "phoneNumber": "8037154924",
+        "address": "121 Tinau Street, Kabala Doki, Kaduna 800283, Kaduna"
+    },
+    {
+        "name": "NAHAR PHARMACY LTD",
+        "phoneNumber": "8082227068",
+        "address": "No 50B, Kaduna Township Stadium, Bida Road"
+    },
+    {
+        "name": "Cocyp Surgical",
+        "phoneNumber": "8037039888",
+        "address": "AY7, Calabar Street, Off Kano Road, Kaduna, Kaduna"
+    },
+    {
+        "name": "Napoto Pharmacy",
+        "phoneNumber": "8037039888",
+        "address": "GG 10 Rigachukwa Rd, Kakuri, Nasarawa 800283, Kaduna"
+    },
+    {
+        "name": "Jerusaves Pharmaceutical Limited",
+        "phoneNumber": "8023760642",
+        "address": "NO 89 Kachia Road, Mekara, Kaduna Junction 800282, Kaduna"
+    },
+    {
+        "name": "Argon Pharmacy Ltd",
+        "phoneNumber": "7034565458",
+        "address": "BZ 10 Kuturu Rd, Kakuri, Kaduna 800283, Kaduna"
+    },
+    {
+        "name": "Multi-Flowers Pharm Co. Ltd",
+        "phoneNumber": "7034565458",
+        "address": "AY8, Kano Road, Oriapata, Kaduna Ori Apata, Kaduna"
+    },
+    {
+        "name": "Alh Shuaibu Bashiru Patent Medicine Store",
+        "phoneNumber": "7034565458",
+        "address": "House NO 44 K/Fada Zaria City, Kaduna"
+    },
+    {
+        "name": "Emmy Medical",
+        "phoneNumber": "8035960161",
+        "address": "No.1 Katsina Rd, Kakuri, Kaduna 800283, Kaduna"
+    }
+]

@@ -1,41 +1,109 @@
 "use client";
 import MaxWidthContainer from "@/components/shared/max-width-container";
-import SearchInput from "@/components/ui/search-input";
-import React, { useState } from "react";
-import { SearchLocations } from "@/utils/mockups";
 import { Check, ChevronsUpDown, MapPin, SearchIcon, X } from "lucide-react";
-import { LocationSearchType } from "@/types";
-const Page = () => {
-  const [results, setResults] = useState(Array.from({ length: 10 }).fill(""));
+import { useEffect, useState } from "react";
+import { SearchLocations } from "@/utils/mockups";
+import { LocationSearchType, PharmListType } from "@/types";
+import SearchInput from "@/components/ui/search-input";
+import AbujaPharmacies from "../../../pharmacies/abuja.json";
+import BeningPharmacies from "../../../pharmacies/benin.json";
+import EnuguPharmacies from "../../../pharmacies/enugu.json";
+import IbadanPharmacies from "../../../pharmacies/ibadan.json";
+import KadunaPharmacies from "../../../pharmacies/kaduna.json";
+import KanoPharmacies from "../../../pharmacies/kano.json";
+import LagosPharmacies from "../../../pharmacies/lagos.json";
+import OwerriPharmacies from "../../../pharmacies/owerri.json";
+import portPharmacies from "../../../pharmacies/portHarcourt.json";
+import { getRandomHexColor } from "@/utils/helpers";
+function Page() {
+  const combinedPharmacies = [
+    ...AbujaPharmacies,
+    ...BeningPharmacies,
+    ...EnuguPharmacies,
+    ...IbadanPharmacies,
+    ...KadunaPharmacies,
+    ...KanoPharmacies,
+    ...LagosPharmacies,
+    ...OwerriPharmacies,
+    ...portPharmacies,
+  ];
+  const [untouchedArray, setUntouchedArray] = useState<PharmListType[]>([]);
+  const [results, setResults] = useState<PharmListType[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [expanded, setExpanded] = useState(false);
-  const [searchLocation, setSearchLocation] = useState<LocationSearchType[]>(
-    [],
+  const [searchLocation, setSearchLocation] = useState<LocationSearchType>(
+    SearchLocations[0],
   );
+
+  const handleSearchPharm = (query: string) => {
+    setSearchQuery(query);
+    const filterPharms = untouchedArray.filter(
+      (pharm) =>
+        pharm.name.toLowerCase().includes(query.toLowerCase()) ||
+        pharm.address.toLowerCase().includes(query.toLowerCase()),
+    );
+    setResults(filterPharms);
+  };
+
   const selectLocation = (location: LocationSearchType) => {
-    if (location === "everywhere") {
-      const allLocationsSelected =
-        searchLocation.length === SearchLocations.length;
-      if (allLocationsSelected) {
-        setSearchLocation([]);
-      } else {
-        setSearchLocation(SearchLocations);
-      }
-      return;
-    }
-    if (searchLocation.includes(location)) {
-      setSearchLocation(searchLocation.filter((loc) => loc !== location));
-    } else {
-      setSearchLocation([...searchLocation, location]);
+    setSearchLocation(location);
+    switch (location) {
+      case "abuja":
+        setResults(AbujaPharmacies);
+        setUntouchedArray(AbujaPharmacies);
+        return;
+      case "lagos":
+        setResults(LagosPharmacies);
+        setUntouchedArray(LagosPharmacies);
+        return;
+      case "ibadan":
+        setResults(IbadanPharmacies);
+        setUntouchedArray(IbadanPharmacies);
+        return;
+      case "enugu":
+        setResults(EnuguPharmacies);
+        setUntouchedArray(EnuguPharmacies);
+        return;
+      case "kaduna":
+        setResults(KadunaPharmacies);
+        setUntouchedArray(KadunaPharmacies);
+        return;
+      case "kano":
+        setResults(KanoPharmacies);
+        setUntouchedArray(KanoPharmacies);
+        return;
+      case "owerri":
+        setResults(OwerriPharmacies);
+        setUntouchedArray(OwerriPharmacies);
+        return;
+      case "portHarcourt":
+        setResults(portPharmacies);
+        setUntouchedArray(portPharmacies);
+        return;
+      case "benin":
+        setResults(BeningPharmacies);
+        setUntouchedArray(BeningPharmacies);
+        return;
+      case "everywhere":
+        setResults(combinedPharmacies);
+        setUntouchedArray(combinedPharmacies);
+        return;
+      default:
+        setResults(combinedPharmacies);
+        setUntouchedArray(combinedPharmacies);
     }
   };
+
+  useEffect(() => {
+    setResults(combinedPharmacies);
+  }, []);
+
   return (
     <MaxWidthContainer className="pt-10 lg:pt-14">
       <section className="flex justify-between">
-        {" "}
         <SearchInput
           searchQuery={searchQuery}
-          setSearchQuery={setSearchQuery}
+          setSearchQuery={handleSearchPharm}
           placeholder="Search for available pharmacies..."
         />
         <div className="relative w-fit text-gray-600">
@@ -45,7 +113,7 @@ const Page = () => {
             className="flex items-center gap-4 rounded-md border bg-white px-6 py-4 transition duration-300 hover:bg-gray-50 focus-visible:border-transparent focus-visible:outline-1 focus-visible:outline-gray-300"
             onClick={() => setExpanded(!expanded)}
           >
-            Where should we search?
+            {searchLocation}
             <ChevronsUpDown size={16} />
           </button>
           <ul
@@ -81,12 +149,17 @@ const Page = () => {
                 key={index}
                 className="flex items-center gap-4 border-b border-gray-100 py-4"
               >
-                <div className="h-16 w-16 rounded-md bg-gray-200"></div>
+                <div
+                  className={`flex h-16 w-16 items-center justify-center rounded-md`}
+                  style={{ backgroundColor: getRandomHexColor() }}
+                >
+                  <span className="text-2xl font-bold">{result.name[0]}</span>
+                </div>
                 <div>
-                  <h3 className="font-semibold xl:text-lg">Pharmacy Name</h3>
+                  <h3 className="font-semibold xl:text-lg">{result.name}</h3>
                   <p className="flex items-center gap-2 text-sm text-gray-600 lg:text-base">
                     <MapPin size={16} />
-                    <span>Location</span>
+                    <span>{result.address}</span>
                   </p>
                 </div>
               </li>
@@ -96,6 +169,6 @@ const Page = () => {
       </section>
     </MaxWidthContainer>
   );
-};
+}
 
 export default Page;

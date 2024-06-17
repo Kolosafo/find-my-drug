@@ -1,0 +1,602 @@
+[
+    {
+        "name": "Hamygdalin Pharmacy",
+        "phoneNumber": "8058687504",
+        "address": "Odua Shopping Complex, Idi Ape Rd, Agodi, Ibadan 200001, Oyo"
+    },
+    {
+        "name": "Cash And Carry Pharmacy",
+        "phoneNumber": "8086739187",
+        "address": "CW33+498, Agodi, Ibadan 200285, Oyo"
+    },
+    {
+        "name": "Litoma Pharmacy",
+        "phoneNumber": "8086739187",
+        "address": "No 64 Vetenary Bus stop Mokola, Mokola, Mokola Hill, Ibadan"
+    },
+    {
+        "name": "Tonik Pharmacy",
+        "phoneNumber": "8086739187",
+        "address": "2 Queen Elizabeth I I Road, Ibadan 200285, Oyo"
+    },
+    {
+        "name": "Troy Pharmacy",
+        "phoneNumber": "9161656273",
+        "address": "22 Idi Ape Rd, Iwo Road, Ibadan 200285, Oyo"
+    },
+    {
+        "name": "Neolife/GNLD Products In Ibadan",
+        "phoneNumber": "7069729771",
+        "address": "38B Moyeroku Agbowo UI, Ibadan"
+    },
+    {
+        "name": "Medville Pharmacy & Supermarket",
+        "phoneNumber": "8091496007",
+        "address": "Oshuntokun Junction, Secretariat Dr, adjacent Zenith Bank Bodija Branch, Bodija, Ibadan 200221"
+    },
+    {
+        "name": "Marykay Pharmacy, Jericho mall",
+        "phoneNumber": "8091496007",
+        "address": "22 Kudeti Ave, Ibadan 200284, Oyo"
+    },
+    {
+        "name": "Tulip Pharmacy",
+        "phoneNumber": "8035268224",
+        "address": "9XMV+W4M, Unnamed Road, Ibadan 200113, Oyo"
+    },
+    {
+        "name": "CareSite Pharmacy & Health",
+        "phoneNumber": "8039480364",
+        "address": "Shop 10/11, Oginni Plaza, 203A Magazine Rd, Jericho, Ibadan"
+    },
+    {
+        "name": "ASLAN PHARMACY AND SUPERMARKET",
+        "phoneNumber": "8167951597",
+        "address": "Opposite UCH, Mokola Rd, Ibadan 200285, Oyo"
+    },
+    {
+        "name": "Midas Pharmacy",
+        "phoneNumber": "8033248325",
+        "address": "35D Eleyele/Dubge Road, Eleyele, Ibadan 200284, Oyo"
+    },
+    {
+        "name": "Florida Pharmacy Ibadan",
+        "phoneNumber": "9071433559",
+        "address": "8VWH+G2X, Lagos by pass, challenge, Ibadan, Oyo 200273, Oyo"
+    },
+    {
+        "name": "Renovo Pharmacy in Ibadan",
+        "phoneNumber": "7010669470",
+        "address": "43 MKO Abiola Way, Ibadan 200273, Oyo"
+    },
+    {
+        "name": "Pharmgate Pharmacy",
+        "phoneNumber": "8099904283",
+        "address": "44 Awolowo Ave, opp. Le Cheteau Event Centre, Old Bodija, Ibadan 200285, Oyo"
+    },
+    {
+        "name": "PALACE PHARMACY and STORES",
+        "phoneNumber": "8172316849",
+        "address": "Shop RP1C, dick road, Aleshinloye, Ibadan"
+    },
+    {
+        "name": "FORTIS PHARMACY & STORES",
+        "phoneNumber": "9082757578",
+        "address": "Opposite Dittob Filling Station, Akala Express Ibadan Oluyole Local Government, Ibadan 200261"
+    },
+    {
+        "name": "COLDCUBES PHARMACY",
+        "phoneNumber": "7034399770",
+        "address": "Ore-meji/ agugu, idi-iroko junction, opposite owolowo co-operative, Ibadan"
+    },
+    {
+        "name": "Gilead Pharmacy",
+        "phoneNumber": "8036194503",
+        "address": "8VXH+4C8, Ibadan 200273, Oyo"
+    },
+    {
+        "name": "Midas pharmacy Ltd",
+        "phoneNumber": "8088397246",
+        "address": "No 17 Ashi Bodija Road, Ibadan 200221"
+    },
+    {
+        "name": "Nubifal Pharmacy",
+        "phoneNumber": "8088397246",
+        "address": "13 Abimbade Onibiyo Wy, Ibadan 200132, Oyo"
+    },
+    {
+        "name": "MEDPLUS PHARMACY - FOODCO, IBADAN.",
+        "phoneNumber": "9150691595",
+        "address": "FoodCo, beside IBEDC, No 95 MKO Abiola Way, Oluyole, Ibadan 200273"
+    },
+    {
+        "name": "GOODALL PHARMACY (WHOLESALES), IBADAN",
+        "phoneNumber": "8112440000",
+        "address": "CX8C+HW9 Adeoyo, Beere Road, agbadagbudu, Ibadan 200284, Oyo"
+    },
+    {
+        "name": "Tonik pharmacy",
+        "phoneNumber": "8112440000",
+        "address": "CW4W+V72 Sandtex Paint Experience Center, Academy, Iwo Road, Ibadan 200132, Oyo"
+    },
+    {
+        "name": "Florida Pharmacy Ibadan",
+        "phoneNumber": "8112440000",
+        "address": "Lagos by pass, Ibadan"
+    },
+    {
+        "name": "INSTAPHARM (Pharmacy & Supermarket) Idi-Iroko Ibadan",
+        "phoneNumber": "9026812248",
+        "address": "Orita Aperin-Beere Rd, Ibadan 201103, Oyo"
+    },
+    {
+        "name": "Adimae Pharmacy",
+        "phoneNumber": "8035737578",
+        "address": "No 1 Tomatz Plaza, Elewuro Junction, Akobo, Ibadan"
+    },
+    {
+        "name": "Live-On Pharmacy",
+        "phoneNumber": "8052276458",
+        "address": "3 Oluyole Way, new bodija, Ibadan 200221, Oyo"
+    },
+    {
+        "name": "Salem Chemist",
+        "phoneNumber": "8052276458",
+        "address": "9WV9+J58, Oke Adu Road, Ibadan 200258, Oyo"
+    },
+    {
+        "name": "Drug Consult Pharmacy, Ibadan",
+        "phoneNumber": "8082912802",
+        "address": "4, Second Powerline B/Stop, Eleyele- Ologuneru Rd, Ibadan 200283"
+    },
+    {
+        "name": "Alvid Pharmacy",
+        "phoneNumber": "8082912802",
+        "address": "Oluyole Extension High School, Paga complex, opposite Alvid pharmacy elebu oja, Oluyole, Ibadan"
+    },
+    {
+        "name": "TULIP PHARMACY",
+        "phoneNumber": "8082912802",
+        "address": "9XPM+JJX Adegbayi, new, Old Ife Rd, Ibadan 200113, Oyo"
+    },
+    {
+        "name": "Medfront Pharmacy Ltd SOKA BRANCH Ibadan",
+        "phoneNumber": "7065640233",
+        "address": "Ibadan 200263, Oyo"
+    },
+    {
+        "name": "Real Crown Pharmacy",
+        "phoneNumber": "7038225647",
+        "address": "Beside First Bank, Lagos By-Pass, Challenge, South East, Challenge Expressway, Ibadan"
+    },
+    {
+        "name": "Sedot Pharmacy & stores ltd",
+        "phoneNumber": "7085522758",
+        "address": "Ebenezery area, F&T Shopping Complex, Polytechnic Junction, Alakia-IyanaChurch road, beside Ibadan, Ibadan 200109, Oyo"
+    },
+    {
+        "name": "Alvid Pharmacy",
+        "phoneNumber": "8035029992",
+        "address": "Elebu, Oja Tesan Road, Ibadan"
+    },
+    {
+        "name": "PHARMACY & SUPERMAKET",
+        "phoneNumber": "8038237142",
+        "address": "3 Olubadan Ave, Oluyole, Ibadan 200273, Oyo"
+    },
+    {
+        "name": "Vanguard Pharmacy",
+        "phoneNumber": "8054068710",
+        "address": "8 MKO Abiola Way, Oluyole, Ibadan 200273, Oyo"
+    },
+    {
+        "name": "Fovic Pharmacy",
+        "phoneNumber": "8033439700",
+        "address": "MKO Abiola Way, Oluyole, Ibadan 200273, Oyo"
+    },
+    {
+        "name": "Raian Pharmacy",
+        "phoneNumber": "8035722155",
+        "address": "No 23, Oluwole Akintola Way, Near Onion Market Police Check Point, Iyana Bodija, Bodija Mkt Rd, Ibadan 200213"
+    },
+    {
+        "name": "INTENSE HEALTHCARE PHARMACY",
+        "phoneNumber": "8098220899",
+        "address": "No. 3 ELETA MRD , ELEBU JUNCTION OFF AKALA WAY, ELEBU JUCTION IDDO, Ibadan"
+    },
+    {
+        "name": "Optimed pharmacy",
+        "phoneNumber": "8135611419",
+        "address": "Alaakia Iyana Church Rd, Ibadan 200113, Oyo"
+    },
+    {
+        "name": "INSTAPHARM (Pharmacy & Supermarket)",
+        "phoneNumber": "9026812248",
+        "address": "Ajibode Primary School Road, Ibadan 200132, Oyo"
+    },
+    {
+        "name": "Marykay Pharmacy & Stores Ltd",
+        "phoneNumber": "8030788191",
+        "address": "Shop 26/27/28 Post service shopping complex, beside Police Barracks, Eleyele, Ibadan"
+    },
+    {
+        "name": "Maxi Pharmacy",
+        "phoneNumber": "8035684484",
+        "address": "Ibadan 200113, Oyo"
+    },
+    {
+        "name": "Diadem Pharmaceutical",
+        "phoneNumber": "8035684484",
+        "address": "97 Oyo Rd, Ibadan 200285, Oyo"
+    },
+    {
+        "name": "Marykay Pharmacy and Stores",
+        "phoneNumber": "8035684484",
+        "address": "Eleyele Road, Eleyele, Ibadan 200284, Oyo"
+    },
+    {
+        "name": "Diadem pharmacy",
+        "phoneNumber": "8035684484",
+        "address": "FVGW+2CW, Ibadan 200132, Oyo"
+    },
+    {
+        "name": "ROBAKEYE PHARMACY & SUPERMART",
+        "phoneNumber": "8059570636",
+        "address": "New Eleyele Rd, Ibadan 200116, Oyo"
+    },
+    {
+        "name": "Danax Pharmacy",
+        "phoneNumber": "8023165043",
+        "address": "100Fajuyi Road, Ibadan 200284, Oyo"
+    },
+    {
+        "name": "God first chemist",
+        "phoneNumber": "8023165043",
+        "address": "44 eyini street, Orita Challenge Road, Ibadan"
+    },
+    {
+        "name": "Kunle Ar\u00c3\u00a1 Pharmacy",
+        "phoneNumber": "8085751111",
+        "address": "Harboni Compound 2, Queen Elizabeth Road, opposite UCH, Ibadan"
+    },
+    {
+        "name": "Tonik Pharmacy",
+        "phoneNumber": "9066892297",
+        "address": "CV2X+49P, Ibadan 200285, Oyo"
+    },
+    {
+        "name": "Pharmadex Pharmacy NIG. LTD",
+        "phoneNumber": "8034729310",
+        "address": "Sango Eleyele Road, opp. Polytechnic Ibadan, Sango, Ibadan 200285, Oyo"
+    },
+    {
+        "name": "BABS OLA PHARMACY",
+        "phoneNumber": "8034729310",
+        "address": "9V4F+9JP, Ibadan 200273, Oyo"
+    },
+    {
+        "name": "Talitha Health Pharmacy",
+        "phoneNumber": "8023247894",
+        "address": "79 Asi Bodija Road, Ashi, Ibadan 200132, Oyo"
+    },
+    {
+        "name": "Talitha Health Pharmacy",
+        "phoneNumber": "8023247894",
+        "address": "79 Asi Bodija Road, Ashi, Ibadan 200132, Oyo"
+    },
+    {
+        "name": "Trevin Pharmacy",
+        "phoneNumber": "8067277523",
+        "address": "Watershed Event centr, 56 Old Ife Rd, Ibadan 234002, Oyo"
+    },
+    {
+        "name": "Desak Pharmacy and Supermarket",
+        "phoneNumber": "8147793686",
+        "address": "13 Hope Road, Alakia, Ibadan 200113, Oyo"
+    },
+    {
+        "name": "Mocdimm Pharmacy",
+        "phoneNumber": "8055060003",
+        "address": "Sw7/48, Near Wattesco Oke-Bola, Oke-Bola, Ibadan, Oyo 200273, Oyo"
+    },
+    {
+        "name": "God'S Glorious Hand Pharmacy",
+        "phoneNumber": "8058222325",
+        "address": "Agbadagbudu, Yemetu Adeoyo street, Ibadan"
+    },
+    {
+        "name": "Fortis supermarket and pharmacy",
+        "phoneNumber": "8058222325",
+        "address": "Ibadan-Abeokuta expressway, Opposite Wema bank, Apata, Ibadan"
+    },
+    {
+        "name": "Liveon Pharmacy & Stores",
+        "phoneNumber": "8027370344",
+        "address": "Esmak Plaza, Suite 2, General Gas - Iyana Church Rd, Akobo, Ibadan"
+    },
+    {
+        "name": "Chilad Pharmacy Ltd",
+        "phoneNumber": "8076784639",
+        "address": "17, Adebiyi Street Joyce B off, MKO Abiola Way, Ibadan"
+    },
+    {
+        "name": "Alvid Pharmacy",
+        "phoneNumber": "8071422595",
+        "address": "56 New Court Road, Ibadan 200263, Oyo"
+    },
+    {
+        "name": "Midas Pharmacy",
+        "phoneNumber": "9082757578",
+        "address": "115, opp. Wema Bank, Apata, Ibadan"
+    },
+    {
+        "name": "Sand lake pharmacy and Supermarket",
+        "phoneNumber": "9082757578",
+        "address": "CVCJ+Q4H, Oke-Itunu- Ijokodo Road, Ibadan 200285, Oyo"
+    },
+    {
+        "name": "MaryKay Pharmacy Store",
+        "phoneNumber": "9082757578",
+        "address": "CRCV+MH9, New Eleyele Rd, behind May-Joy Event Centre, Ibadan 200116, Oyo"
+    },
+    {
+        "name": "MIDAS PHARMACY",
+        "phoneNumber": "8088397246",
+        "address": "ACE MALL, Akobo, Ibadan 200103, Oyo"
+    },
+    {
+        "name": "Alvid Pharmacy",
+        "phoneNumber": "8085921302",
+        "address": "Obafemi Awolowo Way, LG, Ibadan 203102"
+    },
+    {
+        "name": "Value Health Pharmacy",
+        "phoneNumber": "8085921302",
+        "address": "9XMC+HV4, Airport Road, Egbeda, Ibadan 200113, Oyo"
+    },
+    {
+        "name": "Oluyole Pharmacy Ltd.",
+        "phoneNumber": "8094523212",
+        "address": "N4/940, Opp. Police Station, Yemetu Road, Ibadan, Oyo 200285, Oyo"
+    },
+    {
+        "name": "Jogads Pharmacy",
+        "phoneNumber": "8035538663",
+        "address": "9VHX+77W, Ogunmola St, Old Quarter, Ibadan 200263, Oyo"
+    },
+    {
+        "name": "Love Max Pharmacy",
+        "phoneNumber": "8164170776",
+        "address": "Rd 2, Akobo, Ibadan 200132, Oyo"
+    },
+    {
+        "name": "GOOD ALL PHARMACY",
+        "phoneNumber": "9011528264",
+        "address": "9WQ2+468, Ibadan 200285, Oyo"
+    },
+    {
+        "name": "Ayinde Pharmacy",
+        "phoneNumber": "9011528264",
+        "address": "S5/432 adeyalo street, Odinjo Rd, Ibadan"
+    },
+    {
+        "name": "Maxi Pharmacy",
+        "phoneNumber": "7034602128",
+        "address": "101 Old Ife Rd, Ibadan 200113, Oyo"
+    },
+    {
+        "name": "Marykay Pharmacy",
+        "phoneNumber": "7034602128",
+        "address": "H8, First Floor, Heritage Mall, Dugbe, Ibadan 200284, Oyo"
+    },
+    {
+        "name": "Verasset Pharmacy And Store",
+        "phoneNumber": "7034602128",
+        "address": "Ibadan, Oyo"
+    },
+    {
+        "name": "MINARETS PHARMACY AND SUPERMARKET",
+        "phoneNumber": "8060863098",
+        "address": "ROAD, adjacent Awotan Central Mosque, Ibadan 200129, Oyo"
+    },
+    {
+        "name": "FORTIS PHARMACY & STORES",
+        "phoneNumber": "9082757578",
+        "address": "Apata Rd, Ibadan, Oyo 200131, Oyo"
+    },
+    {
+        "name": "Medplus Pharmacy",
+        "phoneNumber": "8056678592",
+        "address": "Ibadan South-West Local Government Secretariat, MKO Abiola Way, Apata, Ibadan 200131, Oyo"
+    },
+    {
+        "name": "Palace Pharmacy & Stores",
+        "phoneNumber": "8030460414",
+        "address": "Elunk Building, Ijebu-Ode road, Km 6 Odo- Ona Kekere Road, Oluyole, Ibadan 110115, Oyo"
+    },
+    {
+        "name": "Maxi Pharmacy",
+        "phoneNumber": "8030460414",
+        "address": "Ibadan 200113, Oyo"
+    },
+    {
+        "name": "Omak Pharmacy and Stores",
+        "phoneNumber": "8033523688",
+        "address": "Ibadan 200132, Oyo"
+    },
+    {
+        "name": "HealthPlus Pharmacy, Cocoa Mall (a mutti Pharmacy)",
+        "phoneNumber": "8093961377",
+        "address": "Shop C40, Cocoa Mall, Bank Road, Dugbe, Ibadan 200284, Oyo"
+    },
+    {
+        "name": "La-Boycert Pharmacy Ltd",
+        "phoneNumber": "8022310492",
+        "address": "Odo Ona-Idi Ishin Quarters Road, Jericho, Ibadan 200116, Oyo"
+    },
+    {
+        "name": "Hephsam pharmacy and store",
+        "phoneNumber": "8022310492",
+        "address": "Idi Orogbo Street, junction, Ibadan 200258, Oyo"
+    },
+    {
+        "name": "Tanimola Pharmacy",
+        "phoneNumber": "8022310492",
+        "address": "10 Ajanla St, New Gra, Ibadan 200273, Oyo"
+    },
+    {
+        "name": "Fortis Pharmacy",
+        "phoneNumber": "7062563214",
+        "address": "58 Apata Market, Oluyole, Ibadan 200273, Oyo"
+    },
+    {
+        "name": "RxGo Pharmacy - Iyanachurch",
+        "phoneNumber": "9040841545",
+        "address": "CXCF+72G Iyana church, Wakajaye Road,Iyana Church, Ibadan - Iwo Rd, Ibadan"
+    },
+    {
+        "name": "Emmahealth Pharmacy",
+        "phoneNumber": "7063280006",
+        "address": "11 Rev. Aderinto Layout, Ibadan 200132, Oyo"
+    },
+    {
+        "name": "EmCare Pharmacy and Store",
+        "phoneNumber": "8120617353",
+        "address": "Alao Akala Expy, Oluyole, Ibadan 200273, Oyo"
+    },
+    {
+        "name": "Boom pharmacy and supermarket limited,Ibadan,Oyo state",
+        "phoneNumber": "7043116872",
+        "address": "local government, 1, along Lateef Owolabi Street, Ajibode-apete road, osajin, Ibadan 200001, Oyo"
+    },
+    {
+        "name": "CEDALAND PHARMACY",
+        "phoneNumber": "8033855524",
+        "address": "8VQJ+4WH, Ibadan 200263, Oyo"
+    },
+    {
+        "name": "Vanguard Pharmacy",
+        "phoneNumber": "8054068710",
+        "address": "CX87+RQJ, By Onibuore Bus Stop Iwo Road, Iwo Rd, Iwo Road, Ibadan"
+    },
+    {
+        "name": "ROA PHARMACY LIMITED",
+        "phoneNumber": "7033602704",
+        "address": "OPP CASHEW COMPLEX, NO 2 Segun Oriola St, Eleyele, Ibadan 200109, Oyo"
+    },
+    {
+        "name": "Fardec Pharmacy & Stores",
+        "phoneNumber": "8034591411",
+        "address": "41, Anfani layout, opposite Ahmadiya mosque, Ibadan"
+    },
+    {
+        "name": "FEFOCARE PHARMACY AND STORE",
+        "phoneNumber": "8098521816",
+        "address": "OPPOSITE OLUYOLE ESTATE GRAMMAR SCHOOL, 14A Alaafin Ave, Oluyole, Ibadan 200273, Oyo"
+    },
+    {
+        "name": "Fumac Pharmacy",
+        "phoneNumber": "8023080855",
+        "address": "Oluyole, Ibadan 200273, Oyo"
+    },
+    {
+        "name": "Belmed Pharmacy and Stores",
+        "phoneNumber": "7015434824",
+        "address": "Shop 12, Akobo Shopping Mall, Opposite Army Barracks, Ojurin, Ibadan 200222"
+    },
+    {
+        "name": "Pharmalot Pharmacy",
+        "phoneNumber": "7014733670",
+        "address": "Bode Wasimi Bashorun Rd, Ibadan 200258, Oyo"
+    },
+    {
+        "name": "HEALTHPLUS PHARMACY",
+        "phoneNumber": "7014733670",
+        "address": "PALMS MALL, MKO Abiola Way, Oluyole, Ibadan 200273, Oyo"
+    },
+    {
+        "name": "Pharmerald Pharmacy",
+        "phoneNumber": "7014733670",
+        "address": "9WP2+XVQ, Ibadan 200285, Oyo"
+    },
+    {
+        "name": "Okikiola Pharmacy",
+        "phoneNumber": "7014733670",
+        "address": "Adigun, mosfala Ibadan, Ibadan"
+    },
+    {
+        "name": "XENON PHARMACY",
+        "phoneNumber": "7014733670",
+        "address": "CW8M+PC2, Basorun Rd, Ibadan 200285, Oyo"
+    },
+    {
+        "name": "Goodall Pharmacy",
+        "phoneNumber": "7014733670",
+        "address": "Ibadan 200113, Oyo"
+    },
+    {
+        "name": "Yewatol Pharmacy",
+        "phoneNumber": "7014733670",
+        "address": "69 Anfani Rd, Ibadan 200273, Oyo"
+    },
+    {
+        "name": "Astral-Pharm Pharmacy Ltd",
+        "phoneNumber": "8052877844",
+        "address": "10, KASUMU ROAD, TIPPER GARAGE, AKALA EXPRESSWAY, Ibadan 200258"
+    },
+    {
+        "name": "FORTIS PHARMACY & STORES",
+        "phoneNumber": "9082757578",
+        "address": "Bembo Street, Apata, Ibadan 200131, Oyo"
+    },
+    {
+        "name": "OBEKI CLINICAL PHARMACY",
+        "phoneNumber": "8055232356",
+        "address": "OBEKI CLINICAL PHARMACY HOUSE, CARTEPILAR BUS STOP, MONOTAN, Ibadan 200132, Oyo"
+    },
+    {
+        "name": "MARANATHA PHARMACY LTD",
+        "phoneNumber": "8033189558",
+        "address": "9RMX+JC7 IAR&T CAMPUS, MOOR PLANTATION, Apata, Ibadan 200131, Oyo"
+    },
+    {
+        "name": "Yb Pharmacy",
+        "phoneNumber": "8037148199",
+        "address": "117 Agbaje Road, Ibadan 200132, Oyo"
+    },
+    {
+        "name": "OLOWOLAFE Pharmacy",
+        "phoneNumber": "8148946728",
+        "address": "No11 Ifedapo Quarters Side Arola Apete Ibadan, Ibadan"
+    },
+    {
+        "name": "Pharmacy",
+        "phoneNumber": "8148946728",
+        "address": "Odo- Ona Kekere Road, Ibadan 110115, Oyo"
+    },
+    {
+        "name": "Pharmaris Pharmacy Ltd",
+        "phoneNumber": "8143987846",
+        "address": "Otolowa Street, Wakajaiye, Iyana Church Street, Ibadan, Oyo"
+    },
+    {
+        "name": "Sky Limit Global Pharmacy",
+        "phoneNumber": "8143987846",
+        "address": "Fortress Plaza, New Adeoyo State Hospital Road , South West, Oluyole, Ibadan"
+    },
+    {
+        "name": "Medplus Pharmacy - Ringroad",
+        "phoneNumber": "7015827741",
+        "address": "Ibadan South-West Local Government Secretariat, MKO Abiola Way, New Gra, Ibadan 200273, Oyo"
+    },
+    {
+        "name": "PHARMALOT CHEMISTS",
+        "phoneNumber": "7015827741",
+        "address": "CW7M+G2H, Basorun Rd, Ibadan 200285, Oyo"
+    },
+    {
+        "name": "Fumac Pharmacy",
+        "phoneNumber": "7015827741",
+        "address": "Oluyole, Ibadan 200273, Oyo"
+    }
+]
