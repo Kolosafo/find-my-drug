@@ -1,7 +1,7 @@
-import { SignUpFornType } from "@/app/(root)/auth/sign-up/page";
 import { LocationSearchType } from "@/types";
-import moment from "moment";
 import { SearchLocations } from "./mockups";
+import moment from "moment";
+import { SignUpFornType } from "@/app/(root)/auth/sign-up/page";
 
 export const priceCalculator = (location: LocationSearchType[]) => {
   const removeEveryWhere = location.filter((l) => l !== "everywhere");
