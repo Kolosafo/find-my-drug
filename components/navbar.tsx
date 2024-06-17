@@ -4,13 +4,12 @@ import MaxWidthContainer from "./shared/max-width-container";
 import { usePathname, useRouter } from "next/navigation";
 import { useSelector } from "react-redux";
 import { IRootState } from "@/redux/store";
+
 function Navbar() {
   const router = useRouter();
   const pathname = usePathname();
-
   const { user, isLogged } = useSelector((state: IRootState) => state.user);
   console.log("PATH NAME: ", pathname);
-
   return (
     <header className="sticky inset-x-0 top-0 z-[100] h-14 w-full border-b border-gray-200 bg-white/80 backdrop-blur-lg transition-all">
       <MaxWidthContainer className="flex items-center justify-between">
@@ -49,7 +48,7 @@ function Navbar() {
                 Search ✨
               </Link>
             </li>
-            {!isLogged && (
+            {isLogged && (
               <li className="relative">
                 <Link
                   href="/search/history"
@@ -63,6 +62,16 @@ function Navbar() {
                 </Link>
               </li>
             )}
+            <li className="relative">
+              <Link
+                href="/pharmacies"
+                className={`rounded-md px-2 py-1 text-sm outline-2 hover:bg-gray-100 focus-visible:outline-dashed ${
+                  pathname === "/pharmacies" ? "bg-gray-200" : "bg-transparent"
+                }`}
+              >
+                Pharmacies
+              </Link>
+            </li>
           </ul>
         </nav>
       </MaxWidthContainer>
