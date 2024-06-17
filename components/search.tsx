@@ -1,5 +1,4 @@
 "use client";
-
 import { drugSearchCollectionRef } from "@/firebase";
 import { IRootState } from "@/redux/store";
 import { DrugSearchType, LocationSearchType } from "@/types";
@@ -7,7 +6,7 @@ import { priceCalculator } from "@/utils/helpers";
 import { SearchLocations } from "@/utils/mockups";
 import { addDoc } from "firebase/firestore";
 import moment from "moment";
-import { Check, ChevronsUpDown, SearchIcon, X } from "lucide-react";
+import { Check, ChevronsUpDown } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { useSelector } from "react-redux";
@@ -48,6 +47,7 @@ function Search() {
       }
       return;
     }
+
     const checkExists = searchLocation.find((item) => item === location);
     if (checkExists) {
       const removeLocation = searchLocation.filter((item) => item !== location);
