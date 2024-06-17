@@ -9,8 +9,17 @@
   --destructive: 0 84.2% 60.2%;
   --primary: 221.2 83.2% 53.3%;
   --accent: 210 40% 96.1%;
-  --solidAccet: 210 40% 100%;
 }
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: 210 40% 98%;
+    --background: 222.2 84% 4.9%;
+    --destructive: 0 62.8% 30.6%;
+    --primary: 217.2 91.2% 59.8%;
+    --accent: 217.2 32.6% 17.5%;
+  }
+} */
 
 body {
   background-color: hsl(var(--background));
@@ -21,14 +30,13 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+  .no-spinners::-webkit-outer-spin-button,
+  .no-spinners::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 
-.no-spinners::-webkit-outer-spin-button,
-.no-spinners::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.no-spinners[type="number"] {
-  -moz-appearance: textfield;
+  .no-spinners[type="number"] {
+    -moz-appearance: textfield;
+  }
 }
