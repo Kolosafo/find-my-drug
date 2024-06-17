@@ -14,6 +14,7 @@ const Page = () => {
   const [fetchLoading, setFetchLoading] = useState(false);
   const [searchObject, setSearchObject] = useState<DrugSearchType>();
   const [submitLoading, setSubmitLoading] = useState(false);
+
   const handleSubmitDrugFound = async (finderInfo: DrugFoundType) => {
     setSubmitLoading(true);
     await addDoc(drugFoundCollectionRef, {

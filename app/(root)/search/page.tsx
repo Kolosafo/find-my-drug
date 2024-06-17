@@ -13,19 +13,17 @@ function Page() {
   const data = [
     {
       image: image1,
-      text: "Do not take a drug without a doctors prescription.",
+      text: "Enter the prescription or drug name(s)",
     },
     {
       image: image2,
-      text: "Do not take a drug without a doctors prescription.",
+      text: "Select where you want us to search, this is typically your state or a nearby state.",
     },
     {
       image: image3,
-      text: "Do not take a drug without a doctors prescription.",
+      text: "Checkout and we will contact you as soon as we find any pharmacy that has your medication",
     },
   ];
-
-  const [results, setResults] = useState(Array.from({ length: 10 }).fill(""));
 
   return (
     <MaxWidthContainer className="grid gap-8 py-14 md:gap-10 lg:grid-cols-2 lg:gap-16 lg:pb-24 xl:gap-28">
@@ -34,10 +32,10 @@ function Page() {
           With contacts of over 2,000 major pharmacies across Nigeria, we can
           help you find any prescribed medication.
         </span>
-
         <Search />
       </section>
-      <section className="relative flex flex-col gap-6 rounded-md">
+
+      <section className="relative flex flex-col gap-6 rounded-md bg-red-500">
         <div className="sticky top-28">
           <div className="flex justify-center bg-slate-50 py-5 text-center">
             <h2>
