@@ -8,7 +8,6 @@ import { getDocs } from "firebase/firestore";
 import { Copy, MapPin, MapPinned, Phone, Search, SearchX } from "lucide-react";
 import { useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
-import { ColorRing } from "react-loader-spinner";
 import { toast } from "react-toastify";
 
 const Page = () => {
