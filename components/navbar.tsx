@@ -11,7 +11,7 @@ function Navbar() {
   const { user, isLogged } = useSelector((state: IRootState) => state.user);
   console.log("PATH NAME: ", pathname);
   return (
-    <header className="sticky inset-x-0 top-0 z-[100] h-14 w-full border-b border-gray-200 bg-white/80 backdrop-blur-lg transition-all">
+    <header className="hidden md:block sticky inset-x-0 top-0 z-[100] h-14 w-full border-b border-gray-200 bg-white/80 backdrop-blur-lg transition-all">
       <MaxWidthContainer className="flex items-center justify-between">
         <Link href="/" className="font-semibold lg:text-lg">
           <span className="text-blue-600">Rx</span>
@@ -19,13 +19,13 @@ function Navbar() {
         </Link>
         <nav>
           <ul
-            className={`flex min-w-full gap-6 text-lg font-medium transition duration-300`}
+            className={`flex min-w-full gap-6 text-lg font-medium transition duration-300 `}
           >
             {!isLogged && (
               <li className="relative">
                 <Link
                   href="/auth/login"
-                  className={`rounded-md px-3 py-1.5 text-sm text-foreground outline-2 transition duration-300 hover:bg-gray-100 focus-visible:outline-dashed ${
+                  className={`rounded-md px-2 py-1.5 text-sm text-foreground outline-2 transition duration-300 hover:bg-gray-100 focus-visible:outline-dashed ${
                     pathname === "/auth/login"
                       ? "bg-gray-100 text-blue-500"
                       : "bg-transparent"
