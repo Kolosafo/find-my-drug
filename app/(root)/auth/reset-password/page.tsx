@@ -3,7 +3,7 @@ import { auth } from "@/firebase";
 import { sendPasswordResetEmail } from "firebase/auth";
 import Link from "next/link";
 import React, { useState } from "react";
-import loginPNG from "../../../../public/login.png";
+import loginPNG from "../../../../public/loginIcon.png";
 import Image from "next/image";
 
 const ResetPassword = () => {
