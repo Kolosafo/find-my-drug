@@ -8,15 +8,15 @@ const DrugFoundForm = ({
   isLoading,
 }: {
   drugName: string;
-  handleSumbitDrugFound: ({
-    finderName,
-    finderLocation,
-    finderPhoneNumber,
-  }: DrugFoundType) => void;
+  handleSumbitDrugFound: (
+    { finderName, finderLocation, finderPhoneNumber }: DrugFoundType,
+    setSuccess: any,
+  ) => void;
   isLoading: boolean;
 }) => {
   const [errorMsg, setErrorMsg] = useState("");
   const [phoneError, setPhoneError] = useState("");
+  const [success, setSuccess] = useState(false);
   const [drugFound, setDrugFound] = useState({
     finderName: "",
     finderLocation: "",
@@ -42,7 +42,7 @@ const DrugFoundForm = ({
       return;
     }
 
-    handleSumbitDrugFound(drugFound);
+    handleSumbitDrugFound(drugFound, setSuccess);
   };
   return (
     <div className="flex min-h-screen items-center justify-center bg-white">
@@ -51,80 +51,93 @@ const DrugFoundForm = ({
           <span className="mb-3 mt-3 self-center text-2xl font-semibold">
             {drugName}
           </span>
-          <span className="mb-2 mt-4 block text-sm font-semibold text-red-500">
-            Please only fill this form if you have the drug/prescription above
-          </span>
-          <div className="my-4">
-            <label
-              className="mb-2 block text-sm font-bold text-gray-700"
-              htmlFor="email"
-            >
-              Pharmacy Name
-            </label>
-            <input
-              className="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
-              id="email"
-              type="text"
-              placeholder="Name of your pharmacy"
-              value={drugFound.finderName}
-              onChange={(e) =>
-                setDrugFound({ ...drugFound, finderName: e.target.value })
-              }
-            />
-          </div>
-          <div className="mb-6">
-            <label
-              className="mb-2 block text-sm font-bold text-gray-700"
-              htmlFor="password"
-            >
-              Location
-            </label>
-            <input
-              className="focus:shadow-outline mb-3 w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
-              id="location"
-              type="text"
-              placeholder="Where is your pharmacy located?"
-              value={drugFound.finderLocation}
-              onChange={(e) =>
-                setDrugFound({ ...drugFound, finderLocation: e.target.value })
-              }
-            />
-          </div>
-          <div className="mb-6">
-            <span className="text-xs text-red-600">{phoneError}</span>
-            <label
-              className="mb-2 block text-sm font-bold text-gray-700"
-              htmlFor="confirmPassword"
-            >
-              Contact Number
-            </label>
-            <input
-              className="focus:shadow-outline no-spinners mb-3 w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
-              id="contactNumber"
-              type="number"
-              placeholder="Contact number e.g 090123456"
-              value={drugFound.finderPhoneNumber}
-              onChange={(e) => {
-                setDrugFound({
-                  ...drugFound,
-                  finderPhoneNumber: e.target.value,
-                });
-              }}
-            />
-          </div>
-          <div className="flex flex-col items-center justify-between">
-            <span className="mb-2 text-sm text-red-600">{errorMsg}</span>
-            <button
-              disabled={isLoading}
-              onClick={handleSubmit}
-              className={`rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700`}
-            >
-              {isLoading ? "Loading..." : "Submit"}
-            </button>
-          </div>
-          <div className="mt-6 text-center">
-            <div className="w-full border-t border-gray-400 pb-4"></div>
-          </div>
+          {success ? (
+            <div className="flex h-full w-full flex-col items-center justify-center">
+              <span className="text-lg text-red-500">Thanks!</span>
+              <span className="text-xl">The patient will contact you soon</span>
+            </div>
+          ) : (
+            <>
+              <span className="mb-2 mt-4 block text-sm font-semibold text-red-500">
+                Please only fill this form if you have the drug/prescription
+                above
+              </span>
+              <div className="my-4">
+                <label
+                  className="mb-2 block text-sm font-bold text-gray-700"
+                  htmlFor="email"
+                >
+                  Pharmacy Name
+                </label>
+                <input
+                  className="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+                  id="email"
+                  type="text"
+                  placeholder="Name of your pharmacy"
+                  value={drugFound.finderName}
+                  onChange={(e) =>
+                    setDrugFound({ ...drugFound, finderName: e.target.value })
+                  }
+                />
+              </div>
+              <div className="mb-6">
+                <label
+                  className="mb-2 block text-sm font-bold text-gray-700"
+                  htmlFor="password"
+                >
+                  Location
+                </label>
+                <input
+                  className="focus:shadow-outline mb-3 w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+                  id="location"
+                  type="text"
+                  placeholder="Where is your pharmacy located?"
+                  value={drugFound.finderLocation}
+                  onChange={(e) =>
+                    setDrugFound({
+                      ...drugFound,
+                      finderLocation: e.target.value,
+                    })
+                  }
+                />
+              </div>
+              <div className="mb-6">
+                <span className="text-xs text-red-600">{phoneError}</span>
+                <label
+                  className="mb-2 block text-sm font-bold text-gray-700"
+                  htmlFor="confirmPassword"
+                >
+                  Contact Number
+                </label>
+                <input
+                  className="focus:shadow-outline no-spinners mb-3 w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+                  id="contactNumber"
+                  type="number"
+                  placeholder="Contact number e.g 090123456"
+                  value={drugFound.finderPhoneNumber}
+                  onChange={(e) => {
+                    setDrugFound({
+                      ...drugFound,
+                      finderPhoneNumber: e.target.value,
+                    });
+                  }}
+                />
+              </div>
+              <div className="flex flex-col items-center justify-between">
+                <span className="mb-2 text-sm text-red-600">{errorMsg}</span>
+                <button
+                  disabled={isLoading}
+                  onClick={handleSubmit}
+                  className={`rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700`}
+                >
+                  {isLoading ? "Loading..." : "Submit"}
+                </button>
+              </div>
+              <div className="mt-6 text-center">
+                <div className="w-full border-t border-gray-400 pb-4"></div>
+              </div>
+            </>
+          )}
         </div>
       </div>
     </div>

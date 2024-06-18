@@ -21,7 +21,7 @@ export const priceCalculator = (location: LocationSearchType[]) => {
 
   // NOW IF THE SELECTED LOCATIONS ARE NOT ALL THE LOCATIONS WE WAN RETURN AN INCREMENTAL PRICE BASED ON HOW MANY LOCATIONS SELECTED
   return {
-    price: 1000 * removeEveryWhere.length,
+    price: 500 * removeEveryWhere.length,
     searchAmount: removeEveryWhere.length * 120,
     locationCount: removeEveryWhere.length,
   };

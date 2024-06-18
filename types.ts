@@ -23,7 +23,9 @@ export type DrugSearchType = {
   id?: string;
   name: string;
   searchLocations: LocationSearchType[];
+  pharmaciesContacted: number;
   dateCreated: string;
+  response: number;
   user?: UserType;
 };
 
@@ -40,7 +42,7 @@ export type HistoryObjectType = {
   id?: string;
   name: string;
   pharmaciesContacted: string;
-  responses: string;
+  response: number;
   dateCreated: string;
 };
 

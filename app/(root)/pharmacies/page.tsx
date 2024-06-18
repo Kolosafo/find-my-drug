@@ -1,6 +1,13 @@
 "use client";
 import MaxWidthContainer from "@/components/shared/max-width-container";
-import { Check, ChevronsUpDown, MapPin, SearchIcon, X } from "lucide-react";
+import {
+  Check,
+  ChevronsUpDown,
+  MapPin,
+  MapPinned,
+  SearchIcon,
+  X,
+} from "lucide-react";
 import { useEffect, useState } from "react";
 import { SearchLocations } from "@/utils/mockups";
 import { LocationSearchType, PharmListType } from "@/types";

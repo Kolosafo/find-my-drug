@@ -8,15 +8,15 @@ type initialStateType = {
 };
 const initailState: initialStateType = {
   user: {
-    email: "",
-    id: "",
-    userType: "pharmacy",
-    name: "",
-    location: "",
-    phoneNumber: 0,
+    email: "kolosafo@gmail.com",
+    id: "skfV4vLtRWOkLSCU84cffZ9LGgB3",
+    userType: "individual",
+    name: "Dauda Kolo",
+    location: "Abuja",
+    phoneNumber: 9075976217,
   },
   authLoading: false,
-  isLogged: false,
+  isLogged: true,
 };
 const userSlice = createSlice({
   name: "user",
@@ -30,14 +30,14 @@ const userSlice = createSlice({
     },
     logout: (state) => {
       state.user = {
-        email: "",
-        id: "",
-        userType: "pharmacy",
-        name: "",
-        location: "",
-        phoneNumber: 0,
+        email: "kolosafo@gmail.com",
+        id: "skfV4vLtRWOkLSCU84cffZ9LGgB3",
+        userType: "individual",
+        name: "Dauda Kolo",
+        location: "Abuja",
+        phoneNumber: 9075976217,
       };
-      state.isLogged = false;
+      state.isLogged = true;
       window.location.reload;
     },
 

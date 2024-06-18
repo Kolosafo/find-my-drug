@@ -1,8 +1,12 @@
 "use client";
 import DrugFoundForm from "@/components/drugFoundForm";
-import { drugFoundCollectionRef, drugSearchCollectionRef } from "@/firebase";
+import {
+  db,
+  drugFoundCollectionRef,
+  drugSearchCollectionRef,
+} from "@/firebase";
 import { DrugFoundType, DrugSearchType } from "@/types";
-import { addDoc, getDocs } from "firebase/firestore";
+import { addDoc, doc, getDocs, setDoc, increment } from "firebase/firestore";
 import { useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { ColorRing } from "react-loader-spinner";
@@ -15,7 +19,10 @@ const Page = () => {
   const [searchObject, setSearchObject] = useState<DrugSearchType>();
   const [submitLoading, setSubmitLoading] = useState(false);
 
-  const handleSubmitDrugFound = async (finderInfo: DrugFoundType) => {
+  const handleSubmitDrugFound = async (
+    finderInfo: DrugFoundType,
+    setSuccess: any,
+  ) => {
     setSubmitLoading(true);
     await addDoc(drugFoundCollectionRef, {
       drugSearchId: searchId,
@@ -24,9 +31,19 @@ const Page = () => {
       finderPhoneNumber: finderInfo.finderPhoneNumber,
       dateFound: finderInfo.dateFound,
     })
-      .then((res) => {
+      .then(async (res) => {
         const drugSearcher = searchObject?.user?.phoneNumber;
         // SEND THE PERSON WHO SEARCH FOR THE DRUG A TEXT MESSAGE THAT THEIR DRUG HAS BEEN FOUND
+
+        //SET THE DRUG SEARCH RESPONSE OBJECT OR INCREASE IT
+        const docRef = doc(db, "drugSearch", searchId ?? "");
+        if (searchObject) {
+          await setDoc(docRef, {
+            ...searchObject,
+            response: searchObject?.response + 1,
+          });
+          setSuccess(true);
+        }
       })
       .catch(() => {
         toast("Something went wrong", {

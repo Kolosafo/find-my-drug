@@ -1,9 +1,11 @@
-import { HistoryObjectType } from "@/types";
+import { DrugSearchType, HistoryObjectType } from "@/types";
 import { checkIsTodayOrYesterday } from "@/utils/helpers";
+import { useRouter } from "next/navigation";
 import React from "react";
 import { HiDotsVertical } from "react-icons/hi";
 
-function HistoryCard(data: HistoryObjectType) {
+function HistoryCard(data: DrugSearchType) {
+  const router = useRouter();
   return (
     <div className="relative flex flex-col rounded-lg bg-blue-100/40 p-4">
       <HiDotsVertical
@@ -15,10 +17,17 @@ function HistoryCard(data: HistoryObjectType) {
       <div className="flex items-center gap-6">
         <span className="text-sm">
           Pharmacies Contacted:{" "}
-          <span className="font-semibold">{data.pharmaciesContacted}</span>{" "}
+          <span className="font-semibold">{data.pharmaciesContacted}</span>
         </span>
-        <span className="text-sm">
-          Responses: <span className="font-semibold">{data.responses}</span>
+        <span
+          className="cursor-pointer text-sm text-red-400"
+          onClick={() =>
+            router.push(
+              `/pharmacies/response?searchId=${data.id}&drugName=${data.name}`,
+            )
+          }
+        >
+          Responses: <span className="font-semibold">{data.response}</span>
         </span>
         <span className="text-sm">
           Date Created:{" "}

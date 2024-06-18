@@ -12,6 +12,7 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import SearchInput from "./ui/search-input";
+import { useRouter } from "next/navigation";
 
 function Search() {
   const { user, isLogged } = useSelector((state: IRootState) => state.user);
@@ -19,6 +20,7 @@ function Search() {
   const [searchLocation, setSearchLocation] = useState<LocationSearchType[]>(
     [],
   );
+  const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
   const [pricing, setPricing] = useState({
     price: 0,
@@ -67,9 +69,12 @@ function Search() {
       searchLocations: searchLocation,
       user,
       dateCreated: moment().format("YYYY-MM-DD"),
+      response: 0,
+      pharmaciesContacted: pricing.searchAmount + 3,
     } as DrugSearchType)
       .then((res) => {
         // EXECUTE TEXTING PHARMACIES
+        router.push("/search/history")
       })
       .catch(() => {
         toast("Something went wrong", {
@@ -78,7 +83,7 @@ function Search() {
       });
     setIsLoading(false);
   };
-  return !isLogged ? (
+  return isLogged ? (
     <div className="flex flex-col gap-8">
       <div className="flex flex-col gap-4">
         <SearchInput
@@ -164,7 +169,7 @@ function Search() {
             <div className="flex justify-between">
               <button
                 disabled={isLoading}
-                // onClick={handleSubmit}
+                onClick={handleSubmit}
                 className="rounded-lg bg-blue-600 px-6 py-3 text-white transition duration-300 hover:bg-blue-600/90"
               >
                 {isLoading ? "Loading..." : `Pay Now - N${pricing.price}`}

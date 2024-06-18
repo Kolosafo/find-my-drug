@@ -35,7 +35,7 @@ function Page() {
         <Search />
       </section>
 
-      <section className="relative flex flex-col gap-6 rounded-md bg-red-500">
+      <section className="relative flex flex-col gap-6 rounded-md">
         <div className="sticky top-28">
           <div className="flex justify-center bg-slate-50 py-5 text-center">
             <h2>
