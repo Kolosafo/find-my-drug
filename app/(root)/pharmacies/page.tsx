@@ -1,13 +1,6 @@
 "use client";
 import MaxWidthContainer from "@/components/shared/max-width-container";
-import {
-  Check,
-  ChevronsUpDown,
-  MapPin,
-  MapPinned,
-  SearchIcon,
-  X,
-} from "lucide-react";
+import { Check, ChevronsUpDown, Loader2, MapPin } from "lucide-react";
 import { useEffect, useState } from "react";
 import { SearchLocations } from "@/utils/mockups";
 import { LocationSearchType, PharmListType } from "@/types";
@@ -41,6 +34,8 @@ function Page() {
   const [searchLocation, setSearchLocation] = useState<LocationSearchType>(
     SearchLocations[0],
   );
+  const [resultsPerPage, setResultsPerPage] = useState(10);
+  const [loading, setLoading] = useState(false);
 
   const handleSearchPharm = (query: string) => {
     setSearchQuery(query);
@@ -101,13 +96,22 @@ function Page() {
     }
   };
 
+  const showMoreResults = async () => {
+    setLoading(true);
+    await new Promise((resolve) => setTimeout(resolve, 1500))
+      .then(() => {
+        setResultsPerPage(resultsPerPage + 10);
+      })
+      .finally(() => setLoading(false));
+  };
+
   useEffect(() => {
     setResults(combinedPharmacies);
   }, []);
 
   return (
     <MaxWidthContainer className="pt-10 lg:pt-14">
-      <section className="flex justify-between">
+      <section className="flex flex-wrap justify-between gap-6">
         <SearchInput
           searchQuery={searchQuery}
           setSearchQuery={handleSearchPharm}
@@ -117,7 +121,7 @@ function Page() {
           <button
             id="actions"
             type="button"
-            className="flex items-center gap-4 rounded-md border bg-white px-6 py-4 transition duration-300 hover:bg-gray-50 focus-visible:border-transparent focus-visible:outline-1 focus-visible:outline-gray-300"
+            className="flex min-w-60 items-center justify-between gap-4 rounded-md border bg-white px-6 py-4 capitalize transition duration-300 hover:bg-gray-50 focus-visible:border-transparent focus-visible:outline-1 focus-visible:outline-gray-300"
             onClick={() => setExpanded(!expanded)}
           >
             {searchLocation}
@@ -148,13 +152,13 @@ function Page() {
           </ul>
         </div>
       </section>
-      <section className="mt-10">
+      <section className="mt-10 space-y-8 pb-14">
         <div className="mx-auto max-w-screen-lg">
           <ul>
-            {results.map((result, index) => (
+            {results.slice(0, resultsPerPage).map((result, index) => (
               <li
                 key={index}
-                className="flex items-center gap-4 border-b border-gray-100 py-4"
+                className="flex items-start gap-4 border-b border-gray-100 py-4"
               >
                 <div
                   className={`flex h-16 w-16 items-center justify-center rounded-md`}
@@ -173,6 +177,14 @@ function Page() {
             ))}
           </ul>
         </div>
+        <button
+          disabled={loading}
+          className="mx-auto flex w-fit items-center gap-2 rounded-md bg-blue-600 px-3 py-2 text-white transition duration-300 hover:bg-blue-600/90 disabled:opacity-50"
+          onClick={showMoreResults}
+        >
+          {loading && <Loader2 className="h-4 w-4 animate-spin transition" />}
+          {loading ? "Loading..." : "Load More"}
+        </button>
       </section>
     </MaxWidthContainer>
   );

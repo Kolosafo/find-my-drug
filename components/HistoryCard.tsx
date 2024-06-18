@@ -1,17 +1,14 @@
 import { DrugSearchType, HistoryObjectType } from "@/types";
 import { checkIsTodayOrYesterday } from "@/utils/helpers";
+import { MoreVertical } from "lucide-react";
 import { useRouter } from "next/navigation";
 import React from "react";
-import { HiDotsVertical } from "react-icons/hi";
 
 function HistoryCard(data: DrugSearchType) {
   const router = useRouter();
   return (
     <div className="relative flex flex-col rounded-lg bg-blue-100/40 p-4">
-      <HiDotsVertical
-        size={25}
-        className="absolute right-3 top-3 cursor-pointer"
-      />
+      <MoreVertical className="absolute right-3 top-3 cursor-pointer" />
 
       <span className="mb-4 text-2xl font-semibold">{data.name}</span>
       <div className="flex items-center gap-6">

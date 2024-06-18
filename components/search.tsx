@@ -164,7 +164,7 @@ function Search() {
               </span>
             </span>
             <span className="text-2xl font-semibold">
-              Total: N{pricing.price}
+              Total: N{new Intl.NumberFormat().format(pricing.price)}
             </span>
             <div className="flex justify-between">
               <button

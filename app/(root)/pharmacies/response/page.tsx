@@ -1,13 +1,15 @@
 "use client";
 import MaxWidthContainer from "@/components/shared/max-width-container";
+import Loader from "@/components/ui/loader";
 import { drugFoundCollectionRef } from "@/firebase";
 import { DrugFoundType } from "@/types";
 import { getRandomHexColor } from "@/utils/helpers";
 import { getDocs } from "firebase/firestore";
-import { MapPin, MapPinned } from "lucide-react";
+import { Copy, MapPin, MapPinned, Phone, Search, SearchX } from "lucide-react";
 import { useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { ColorRing } from "react-loader-spinner";
+import { toast } from "react-toastify";
 
 const Page = () => {
   const searchParams = useSearchParams();
@@ -20,8 +22,12 @@ const Page = () => {
   const handleCopy = async (textToCopy: string) => {
     try {
       await navigator.clipboard.writeText(textToCopy);
-      setIsCopied(true);
-      setTimeout(() => setIsCopied(false), 3000);
+      // setIsCopied(true);
+      toast("Phone number copied", {
+        type: "success",
+        style: { fontSize: "14px" },
+      });
+      // setTimeout(() => setIsCopied(false), 3000);
     } catch (err) {
       console.error("Failed to copy text:", err);
     }
@@ -42,29 +48,25 @@ const Page = () => {
     };
     handleFetchFoundDrugs();
   }, [searchId]);
+
   return (
-    <MaxWidthContainer className="pt-10 lg:pt-14">
-      <span className="text-xl">{drugName}</span>
+    <MaxWidthContainer className="space-y-6 pt-10 lg:pt-14">
+      <div className="mx-auto max-w-md rounded-md border bg-white p-6">
+        <h1 className="text-center lg:text-xl">
+          Search responses for:
+          <span className="ml-3 text-blue-600">&quot;{drugName}&quot;</span>
+        </h1>
+      </div>
+
       {isLoading ? (
-        <div className="flex h-[80vh] w-screen flex-col items-center justify-center">
-          <ColorRing
-            visible={true}
-            height="100"
-            width="50"
-            ariaLabel="color-ring-loading"
-            wrapperStyle={{}}
-            wrapperClass="color-ring-wrapper"
-            colors={["#000000", "#000000", "#000000", "#000000", "#000000"]}
-          />
-          <span className="text-red-600">Loading...</span>
-        </div>
+        <Loader />
       ) : drugFoundData.length > 0 ? (
         <div className="mx-auto max-w-screen-lg">
           <ul>
             {drugFoundData.map((result, index) => (
               <li
                 key={index}
-                className="flex items-center gap-4 border-b border-gray-100 py-4"
+                className="flex items-start gap-4 border-b border-gray-100 py-4"
               >
                 <div
                   className={`flex h-16 w-16 items-center justify-center rounded-md`}
@@ -91,21 +93,23 @@ const Page = () => {
                         const googleMapsUrl = `https://www.google.com/maps/place/${encodedLocation}`;
                         window.open(googleMapsUrl, "_blank");
                       }}
-                      className="flex w-fit items-center gap-2 self-end rounded-lg bg-green-600 px-3 py-2 text-white transition duration-300 hover:bg-green-600/80"
+                      className="flex w-fit items-center gap-2 self-end rounded-md bg-green-600 px-3 py-2 text-sm text-white transition duration-300 hover:bg-green-600/80"
                     >
-                      <MapPinned /> Open in Maps
+                      <MapPinned size={16} /> Open in Maps
                     </button>
                     <a
                       href={`tel:${result.finderPhoneNumber}`}
-                      className="flex w-fit items-center gap-2 self-end rounded-lg bg-blue-600 px-3 py-2 text-white transition duration-300 hover:bg-blue-600/80"
+                      className="flex w-fit items-center gap-2 self-end rounded-md bg-blue-600 px-3 py-2 text-sm text-white transition duration-300 hover:bg-blue-600/80"
                     >
+                      <Phone size={16} />
                       Call
                     </a>
                     <button
                       onClick={() => handleCopy(`${result.finderPhoneNumber}`)}
-                      className="flex w-fit items-center gap-2 self-end rounded-lg bg-orange-500 px-3 py-2 text-white transition duration-300 hover:bg-orange-500/80"
+                      className="flex w-fit items-center gap-2 self-end rounded-md bg-orange-500 px-3 py-2 text-sm text-white transition duration-300 hover:bg-orange-500/80"
                     >
-                      {!isCopied ? "Copy Phone Number" : "copied!"}
+                      <Copy size={16} />
+                      {!isCopied ? "Copy Phone No." : "copied!"}
                     </button>
                   </div>
                 </div>
@@ -114,11 +118,14 @@ const Page = () => {
           </ul>
         </div>
       ) : (
-        <div className="flex h-[80vh] w-[90vw] flex-col items-center justify-center">
-          <span className="text-lg text-red-600">Please check back later</span>
-          <span className="text-red-600">
-            No responses yet for this drug search
-          </span>
+        <div className="mx-auto mt-2 flex min-h-80 max-w-md flex-col items-center gap-8 rounded-md border bg-white p-6 text-center">
+          <div>
+            <p className="text-lg text-blue-600 lg:text-xl">
+              Please check back later
+            </p>
+            <p className="">No responses for this drug search yet</p>
+          </div>
+          <SearchX size={100} className="text-gray-300" />
         </div>
       )}
       {/* {HistorMockup.map((item, index) => (

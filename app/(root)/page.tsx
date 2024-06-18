@@ -15,12 +15,12 @@ export default function Home() {
               <h1 className="relative w-fit text-balance text-4xl font-bold !leading-tight tracking-tight text-gray-900 md:text-5xl lg:text-6xl xl:text-7xl">
                 <span className="px-2 text-blue-600"> Hassle free</span> search
                 for your medical
-                <span className="px-2 text-blue-600"> prescriptions</span>
+                <span className="px-2 text-blue-600"> prescriptions</span>{" "}
               </h1>
             </div>
             <p className="lg:text-lef mx-auto mt-8 max-w-prose text-balance text-center text-lg md:text-wrap lg:pr-10">
               <span className="font-semibold">
-                Don&apos;t settle for alternative drugs,
+                Don&apos;t settle for alternative drugs
               </span>{" "}
               Seach for your prescriptions easily from over 2,000 pharmacies
               across Nigeria.
@@ -46,7 +46,7 @@ export default function Home() {
               </div>
 
               <div>
-                <h2 className="mb-4 text-blue-600">For pharmacies</h2>
+                <h2 className="mb-4 text-blue-600">For businesses</h2>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-1.5 text-left">
                     <Check className="h-5 w-5 shrink-0 text-blue-600" />
@@ -54,7 +54,7 @@ export default function Home() {
                   </li>
                   <li className="flex items-center gap-1.5 text-left">
                     <Check className="h-5 w-5 shrink-0 text-blue-600" />
-                    Sell out quickly
+                    Sell out quickly.
                   </li>
                   <li className="flex items-center gap-1.5 text-left">
                     <Check className="h-5 w-5 shrink-0 text-blue-600" />

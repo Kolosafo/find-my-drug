@@ -1,10 +1,14 @@
 "use client";
 import HistoryCard from "@/components/HistoryCard";
+import MaxWidthContainer from "@/components/shared/max-width-container";
+import Loader from "@/components/ui/loader";
 import { drugSearchCollectionRef } from "@/firebase";
 import { IRootState } from "@/redux/store";
 import { DrugSearchType } from "@/types";
 import { HistorMockup } from "@/utils/mockups";
 import { getDocs } from "firebase/firestore";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { ColorRing } from "react-loader-spinner";
@@ -37,29 +41,34 @@ const Page = () => {
     })();
   }, [user]);
   return fetchLoading ? (
-    <div className="flex h-screen w-screen flex-col items-center justify-center">
-      <ColorRing
-        visible={true}
-        height="50"
-        width="50"
-        ariaLabel="color-ring-loading"
-        wrapperStyle={{}}
-        wrapperClass="color-ring-wrapper"
-        colors={["#000000", "#000000", "#000000", "#000000", "#000000"]}
-      />
-      <span className="text-red-600">Loading...</span>
-    </div>
+    <Loader />
   ) : !fetchLoading && searchObject.length === 0 ? (
-    <div className="flex h-[80vh] w-[90vw] flex-col items-center justify-center">
-      <span className="text-red-600">You haven&apos;t searched any drugs yet</span>
-    </div>
+    <MaxWidthContainer className="flex min-h-[80vh] flex-col items-center justify-center">
+      <div className="mx-auto mt-2 flex min-h-80 max-w-md flex-col items-center justify-center gap-4 p-6 text-center">
+        <h1 className="text-lg text-gray-900 lg:text-xl">
+          You haven&apos;t searched for any drug yet.
+        </h1>
+        <Link
+          href="/search"
+          className="flex w-fit items-center gap-2 rounded-md bg-blue-600 px-3 py-2 text-white transition duration-300 hover:bg-blue-600/80"
+        >
+          Search
+          <ArrowRight className="h-4 w-4" />
+        </Link>
+      </div>
+    </MaxWidthContainer>
   ) : (
-    <div className="flex flex-col gap-6 p-10 px-16">
-      <span>Search Histoy</span>
-      {searchObject.map((item, index) => (
-        <HistoryCard key={index} {...item} />
-      ))}
-    </div>
+    <MaxWidthContainer className="space-y-8 py-10">
+      <div className="mx-auto max-w-md rounded-md border bg-white p-4">
+        <h1 className="text-center lg:text-lg">Search History</h1>
+      </div>
+
+      <div className="mx-auto flex max-w-screen-lg flex-col gap-6">
+        {searchObject.map((item, index) => (
+          <HistoryCard key={index} {...item} />
+        ))}
+      </div>
+    </MaxWidthContainer>
   );
 };
 
